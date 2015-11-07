@@ -1,0 +1,138 @@
+
+
+Started GET "/type/" for ::1 at 2015-11-07 15:09:35 -0800
+Processing by WelcomeController#show as HTML
+  Rendered welcome/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1557ms (Views: 1545.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:09:37 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:09:37 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:09:40 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:09:40 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:09:40 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:09:40 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:10:21 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jUaP67O1tvPWLlkEAt3paMSrA/Q/WIagiYPW9hYB5PRkH3WNcXBKizjUeHPALzklLLezZihu3yUaHIilXblPZQ==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:10:21 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 543ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:10:22 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:10:22 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:10:49 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 60ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:10:50 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:10:50 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:13:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 334ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:13:09 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:13:09 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:13:44 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 157ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:13:45 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:13:45 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:14:31 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 226ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:14:32 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:14:32 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:15:28 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 195ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:15:28 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:15:28 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:18:42 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 741ms (Views: 205.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:18:43 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:18:43 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:25:45 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 503ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:25:46 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:25:46 -0800
