@@ -15130,3 +15130,430 @@ Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 14:41:34 -0800
 
 Started GET "/assets/application.js" for ::1 at 2015-11-07 14:41:34 -0800
 >>>>>>> hackathon
+
+
+Started GET "/" for ::1 at 2015-11-07 15:27:07 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 1028ms (Views: 1019.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:27:08 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:27:08 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:27:08 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:27:30 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hy8Vf9eAXzRYgICfl5E16BQurrcwPykyZ4C/MvVi/pXzCpoLIBMSzviRwbb7sE4tXTeZBf2NHcndwbghvOff7Q==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/bizlogic.js"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/bizlogic.js
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/bizlogic.js" for ::1 at 2015-11-07 15:27:30 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/bizlogic.js"}
+  Rendered welcome/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 649ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:27:31 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:27:31 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:27:38 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:27:38 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:27:38 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:27:38 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:27:50 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TeF296qIouQcmSGkYk/CjfbrHspqae8QFlaerdwLE7I5xPmDXRvvHryIYI0ObrlIv/IpeKfb2+usF5m+lY4yyg==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/" for ::1 at 2015-11-07 15:27:50 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/"}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 595ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:27:51 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:27:51 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:27:55 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:27:56 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:27:56 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:27:56 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:28:03 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A95+1inOlWoL0wdx7/V5VDsy8LtF/sqk4ox+n9WHCwp3+/Gi3l3YkKvCRliD1AKRcivHCYhM/l9YzXmMnAIqcg==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/."}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/.
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/." for ::1 at 2015-11-07 15:28:03 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/."}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 562ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:28:03 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:28:03 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:28:05 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:28:05 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:28:05 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:28:05 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:28:55 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:28:55 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:28:55 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:28:55 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:29:02 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"np264NiB8rNNw9SPprne3t0PEbDCIkaZUBO/vXe6RiDquDWULxK/Se3SlabKmKUblBYmAg+QcmLqUriuPj9nWA==", "/"=>{"url"=>"https://github.com/asjdklsajd/"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/asjdklsajd/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/asjdklsajd/" for ::1 at 2015-11-07 15:29:02 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/asjdklsajd/"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `split' for nil:NilClass:
+  app/controllers/welcome_controller.rb:12:in `show'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Yago/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Yago/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Yago/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/c29a5eb58c9eebbc/variables" for ::1 at 2015-11-07 15:29:02 -0800
+
+
+Started POST "/__better_errors/c29a5eb58c9eebbc/eval" for ::1 at 2015-11-07 15:29:16 -0800
+
+
+Started POST "/__better_errors/c29a5eb58c9eebbc/eval" for ::1 at 2015-11-07 15:29:23 -0800
+
+
+Started POST "/__better_errors/c29a5eb58c9eebbc/eval" for ::1 at 2015-11-07 15:29:30 -0800
+
+
+Started POST "/__better_errors/c29a5eb58c9eebbc/eval" for ::1 at 2015-11-07 15:29:36 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:30:16 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:30:16 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:30:16 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:30:16 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:30:17 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:30:17 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:30:17 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:30:17 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:30:27 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+zJj7ZpTsYcGMH47+sz7Aw3/zc4eYq0hiN8D/hX4/fqPF+yZbcD8faYhPxKW7YDGROb6fNPQmdoyngTtXH3cgg==", "/"=>{"url"=>"https://github.com/aasjlkdajsldksjdklasjd.asdhkjahdskjhfkjrf"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/aasjlkdajsldksjdklasjd.asdhkjahdskjhfkjrf
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/aasjlkdajsldksjdklasjd.asdhkjahdskjhfkjrf" for ::1 at 2015-11-07 15:30:27 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/aasjlkdajsldksjdklasjd.asdhkjahdskjhfkjrf"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `split' for nil:NilClass:
+  app/controllers/welcome_controller.rb:12:in `show'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Yago/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Yago/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Yago/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/ad72162db818f5bb/variables" for ::1 at 2015-11-07 15:30:27 -0800
+
+
+Started POST "/__better_errors/ad72162db818f5bb/eval" for ::1 at 2015-11-07 15:30:38 -0800
+
+
+Started POST "/__better_errors/ad72162db818f5bb/eval" for ::1 at 2015-11-07 15:30:42 -0800
+
+
+Started POST "/__better_errors/ad72162db818f5bb/eval" for ::1 at 2015-11-07 15:30:52 -0800
+
+
+Started POST "/__better_errors/ad72162db818f5bb/eval" for ::1 at 2015-11-07 15:31:00 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:31:44 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:31:45 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:31:45 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:31:45 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:31:46 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:31:46 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:31:46 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:31:46 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:31:53 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dWHa7azkFdS6IX+Uw0AtUdLVIiT+5T15NV3jiTCNDnQBRFWZW3dYLhowPr2vYVaUm8wVljNXCYKPHOSaeQgvDA==", "/"=>{"url"=>"https://github.com/asjdlkajsdkajdkls/..sadkasdajdlk"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/asjdlkajsdkajdkls/..sadkasdajdlk
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/asjdlkajsdkajdkls/..sadkasdajdlk" for ::1 at 2015-11-07 15:31:53 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/asjdlkajsdkajdkls/..sadkasdajdlk"}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 848ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:31:54 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:31:54 -0800
