@@ -1,1 +1,7 @@
-<section id="typingContent">HEY GUYS</section>
+<section id="typingContent">
+  <pre>
+    <% @content.each do |line| %>
+      <%= line %>
+    <% end %>
+  </pre>
+</section>

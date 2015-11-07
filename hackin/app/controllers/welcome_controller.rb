@@ -4,17 +4,18 @@ class WelcomeController < ApplicationController
 
   def create
     url = params['/']['url']
-    format_url(url)
+    redirect_to "/type/?url=#{url}"
   end
 
   def show
+    url = format_url(params['url'])
+    @content = HTTParty.get(url).body.split("\n")
   end
 
   private
     def format_url url
       url.gsub!(/github.com/, 'raw.githubusercontent.com')
       url.gsub!(/blob\//, '')
-      fail
     end
 end
 
