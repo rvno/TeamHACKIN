@@ -5260,3 +5260,55 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/application
   Rendered /Users/josetaveras/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/josetaveras/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (181.3ms)
 >>>>>>> 27dc9ddbe922c2c1678618b195c9d79756b61437
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:34:08 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 807ms (Views: 274.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:34:09 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:34:09 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:34:59 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 323ms (Views: 174.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:35:00 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:35:00 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:35:12 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:35:16 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2fe49uA7xSMkCV7GoElPuBp/oG4bBc0TJI5uvQkwTQ8wrkKQIv45W8rzf7Fiu5/18mMQ/AwzlJa3ETDuQojmng==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:35:16 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 457ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:35:17 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:35:17 -0800

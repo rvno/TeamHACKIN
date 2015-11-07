@@ -3,6 +3,7 @@ $(document).ready(function(){
   var characterIndex = 0;
   var start_time = new Date();
   var mistake = false;
+
   highlightCurrent = function(){
     highlightYellow(characterIndex);
   };

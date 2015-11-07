@@ -2,11 +2,21 @@ $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
   var characterIndex = 0;
   var incorrectStrokes = {};
+  var start_time = new Date();
 
   showStats = function(){
     updateWastedStrokes();
     updateTopMissedKeys();
+    updateCPM();
   };
+
+  function updateCPM(){
+    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
+    console.log(characters_typed);
+    //time
+    var time_spent = (new Date()).getTime() - start_time;
+    $('#cpm').html(characters_typed/(time_spent/60000));
+  }
 
   updateWastedStrokes = function(){
     var totalStrokes = 0;
@@ -65,8 +75,8 @@ $(document).ready(function(){
     } else {
       trackIncorrectStroke(keyCode);
       highlightRed(characterIndex);
-      showStats();
     }
+    showStats();
   }
 
   $("html").keypress(function(keyEvent){
