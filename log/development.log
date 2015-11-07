@@ -16683,3 +16683,96 @@ Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:50:14 -0800
 
 
 Started GET "/assets/application.js" for ::1 at 2015-11-07 15:50:14 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:51:18 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:51:18 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:51:18 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:51:18 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:51:21 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uAluQEh1kR1kskJ9n1r9vRm9D4carGs0PSeoPOvbK/XMLOE0v+bc58SjA1Tze4Z4UKQ4NdceX8+HZq8vol4KjQ==", "/"=>{"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 15:51:21 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 98ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:51:21 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:51:21 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:51:22 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:51:23 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ajLjjFOrXEG+CIiSnlJx6vhyqPVT3VVnOGPtKKa/G+geF2z4pDgRux4ZybvycwovsWufR55vYZyCIuo77zo6kA==", "/"=>{"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 15:51:23 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 90ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:51:24 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:51:24 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:51:25 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:51:27 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ppUsSU3X9ECxJJk8nFdMAntmeEhwf3xbtjL+I7DI9PPSsKM9ukS5uhE12BXwdjfHMn9P+r3NSKAMc/kw+U3Viw==", "/"=>{"url"=>"https://github.com/noahwiener/2048/blob/gh-pages/js/tile.js"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/noahwiener/2048/blob/gh-pages/js/tile.js
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/noahwiener/2048/blob/gh-pages/js/tile.js" for ::1 at 2015-11-07 15:51:27 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/noahwiener/2048/blob/gh-pages/js/tile.js"}
+  Rendered welcome/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 215ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:51:27 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:51:27 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:51:28 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
