@@ -1,8 +1,41 @@
 $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
   var characterIndex = 0;
+  var incorrectStrokes = {};
   var start_time = new Date();
-  var mistake = false;
+
+  showStats = function(){
+    updateWastedStrokes();
+    updateTopMissedKeys();
+    updateCPM();
+  };
+
+  function updateCPM(){
+    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
+    console.log(characters_typed);
+    //time
+    var time_spent = (new Date()).getTime() - start_time;
+    $('#cpm').html(characters_typed/(time_spent/60000));
+  }
+
+  updateWastedStrokes = function(){
+    var totalStrokes = 0;
+
+    for (var keyCode in incorrectStrokes) {
+      totalStrokes += incorrectStrokes[keyCode];
+      console.log(totalStrokes);
+    }
+
+    $('#stats span#strokes').text(totalStrokes);
+  }
+
+  updateTopMissedKeys = function(){
+
+  };
+
+  trackIncorrectStroke = function(keyCode){
+    incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
+  };
 
   highlightCurrent = function(){
     highlightYellow(characterIndex);
@@ -28,12 +61,9 @@ $(document).ready(function(){
 
   highlightRed = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('red');
-    mistake = true;
   }
 
   checkKeyPress = function(keyCode){
-    updateCPM();
-
     if(correctCharacters[characterIndex] === String.fromCharCode(keyCode)){
       highlightGreen(characterIndex);
       characterIndex += 1;
@@ -42,38 +72,17 @@ $(document).ready(function(){
       console.log('return entered');
       characterIndex += 1;
       highlightCurrent();
-    }else if(keyCode === 8){
-      if(mistake){
-
-        console.log('backspace entered');
-        highlightCurrent();
-        mistake = false;
-      }
     } else {
+      trackIncorrectStroke(keyCode);
       highlightRed(characterIndex);
-
     }
+    showStats();
   }
-  function updateCPM(){
-    //words typed
-      //there is a space between every 2 words, so basically every space represents one word. ish
-      // console.log(typeof correctCharacters);
-    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
-    console.log(characters_typed);
-    //time
-    var time_spent = (new Date()).getTime() - start_time;
-    $('#cpm').html(characters_typed/(time_spent/60000));
-  }
+
   $("html").keypress(function(keyEvent){
-    keyEvent.preventDefault();
     checkKeyPress(keyEvent.keyCode);
   })
-  $("html").keyup(function(keyEvent){
-    keyEvent.preventDefault();
-    // console.log(keyEvent.keyCode);
-    if(keyEvent.keyCode===8){
-      checkKeyPress(keyEvent.keyCode);
-    }
-  });
+
   preparePage();
+
 });
