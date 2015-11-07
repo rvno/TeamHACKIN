@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get '/type' => 'welcome#show'
+  get '/type' => 'welcome#show', as: "url"
+  post '/' => 'welcome#create', as: 'new_file'
   root 'welcome#index'
   # HEYYYYY
 
