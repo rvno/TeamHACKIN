@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
   var characterIndex = 0;
-
+  var start_time = new Date();
   highlightCurrent = function(){
     highlightYellow(characterIndex);
   };
@@ -29,6 +29,7 @@ $(document).ready(function(){
   }
 
   checkKeyPress = function(keyCode){
+    var current_time = start_time
     if(correctCharacters[characterIndex] === String.fromCharCode(keyCode)){
       highlightGreen(characterIndex);
       characterIndex += 1;
@@ -43,6 +44,7 @@ $(document).ready(function(){
   }
 
   $("html").keypress(function(keyEvent){
+    keyEvent.preventDefault();
     checkKeyPress(keyEvent.keyCode);
   })
 
