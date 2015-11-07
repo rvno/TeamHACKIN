@@ -5312,3 +5312,29 @@ Started GET "/assets/application.js" for ::1 at 2015-11-07 15:35:17 -0800
 
 
 Started GET "/assets/application.css" for ::1 at 2015-11-07 15:35:17 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:47:59 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 690ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:48:00 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:48:00 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb" for ::1 at 2015-11-07 15:48:12 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/hackathon/app/controllers/application_controller.rb"}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 481ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:48:12 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:48:12 -0800
