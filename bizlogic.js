@@ -2,19 +2,22 @@ $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
   var characterIndex = 0;
 
+  preparePage = function(){
+    var highlightable = [];
+    correctCharacters.forEach(function(value, index, a){
+      highlightable.push("<span data-character-index='"+ index +"'>"+ value +"</span>");
+    });
+
+    $('#typingContent pre').html(highlightable.join(""));
+  }
+
+  highlightGreen = function(index){
+    $('span[data-character-index='+ index +']').addClass('green');
+  };
+
   checkKeyPress = function(keyCode){
-    console.log('keyCode');
-    console.log(keyCode);
-    console.log('string entered');
-    console.log(String.fromCharCode(keyCode));
-    console.log('expected');
-    console.log(correctCharacters[characterIndex]);
-    console.log('array');
-    console.log(correctCharacters);
-    console.log('current index');
-    console.log(characterIndex);
     if(correctCharacters[characterIndex] === String.fromCharCode(keyCode)){
-      console.log('correct letter');
+      highlightGreen(characterIndex);
       characterIndex += 1;
     }
 
@@ -28,4 +31,5 @@ $(document).ready(function(){
     checkKeyPress(keyEvent.keyCode);
   })
 
+  preparePage();
 });
