@@ -60,26 +60,33 @@ p{
 
 #categories{
 	width: 80%;
-	margin: 20px auto;
+	margin: 20px auto; 
 }
 
 .row{
 	margin: 0 auto;
 	width: 80%;
+	display: flex; 
+  	justify-content: center;  
+	
 }
 
 .category{
 	height: 300px;
 	width: 270px;
 	/*border: 1px solid #5b2971;*/
-	margin: 5px 5px;
-	display: inline-block;
+	margin: 10px 10px;
+	/*display: inline-block;*/
 	text-align: center;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #5b2971;
-	padding: 30px 2px 10px 2px;
+	font-size: 18px;
+	padding: 40px 5px 10px 5px;
 	background-color: #fff;
 }
+
+.category { transition: all .4s ease-in-out; }
+.category:hover { transform: scale(1.1); }
 
 .category:hover{
 	color: white;
