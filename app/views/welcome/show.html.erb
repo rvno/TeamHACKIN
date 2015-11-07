@@ -2,8 +2,12 @@
   <pre>
     <%= @filetype %>
     <%= @filename %>
-    <% @content.each do |line| %>
-      <%= line %>
+    <% if @content %>
+      <% @content.each do |line| %>
+        <%= line %>
+      <% end %>
+    <% else %>
+      Unable to load github file.  Please try again with a valid url for a single file in a github repo.
     <% end %>
   </pre>
 </section>

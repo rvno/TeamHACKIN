@@ -2,6 +2,6 @@
   <%= f.text_field "url",
       placeholder: "github url",
       pattern: ".*github.com.*",
-      oninvalid: "setCustomValidity('Plz enter on Alphabets ')",
+      oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
       onchange: "try{setCustomValidity('')}catch(e){}" %>
 <% end %>

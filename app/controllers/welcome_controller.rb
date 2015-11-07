@@ -12,10 +12,8 @@ class WelcomeController < ApplicationController
     @filetype = url.split(/[\/,\.]/).last
     @filename = url.split(/[\/,\.]/)[-2]
     @content = HTTParty.get(url).body.split("\n")
-
-
   rescue
-    @content = ["this didn't work"]
+    @content = nil
   end
 
   private
