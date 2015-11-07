@@ -10,6 +10,9 @@ class WelcomeController < ApplicationController
   def show
     url = format_url(params['url'])
     @content = HTTParty.get(url).body.split("\n")
+
+  rescue
+    @content = ["this didn't work"]
   end
 
   private
