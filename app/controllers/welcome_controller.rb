@@ -18,4 +18,3 @@ class WelcomeController < ApplicationController
       url.gsub!(/blob\//, '')
     end
 end
-

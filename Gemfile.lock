@@ -44,7 +44,6 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (8.0.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -138,7 +137,6 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  byebug
   coffee-rails (~> 4.1.0)
   httparty
   jbuilder (~> 2.0)
@@ -148,6 +146,3 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   turbolinks
   web-console (~> 2.0)
-
-BUNDLED WITH
-   1.10.6
