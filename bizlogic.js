@@ -1,6 +1,31 @@
 $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
   var characterIndex = 0;
+  var incorrectStrokes = {};
+
+  showStats = function(){
+    updateWastedStrokes();
+    updateTopMissedKeys();
+  };
+
+  updateWastedStrokes = function(){
+    var totalStrokes = 0;
+
+    for (var keyCode in incorrectStrokes) {
+      totalStrokes += incorrectStrokes[keyCode];
+      console.log(totalStrokes);
+    }
+
+    $('#stats span#strokes').text(totalStrokes);
+  }
+
+  updateTopMissedKeys = function(){
+
+  };
+
+  trackIncorrectStroke = function(keyCode){
+    incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
+  };
 
   highlightCurrent = function(){
     highlightYellow(characterIndex);
@@ -38,7 +63,9 @@ $(document).ready(function(){
       characterIndex += 1;
       highlightCurrent();
     } else {
+      trackIncorrectStroke(keyCode);
       highlightRed(characterIndex);
+      showStats();
     }
   }
 
