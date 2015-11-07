@@ -9,7 +9,11 @@ class WelcomeController < ApplicationController
 
   def show
     url = format_url(params['url'])
+    @filetype = url.split(/[\/,\.]/).last
+    @filename = url.split(/[\/,\.]/)[-2]
     @content = HTTParty.get(url).body.split("\n")
+  rescue
+    @content = nil
   end
 
   private
@@ -18,4 +22,3 @@ class WelcomeController < ApplicationController
       url.gsub!(/blob\//, '')
     end
 end
-
