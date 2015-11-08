@@ -5,12 +5,7 @@ $(document).ready(function(){
   var start_time = new Date();
   var mistake = false;
   var finished = false;
-  // /*
-  //    * this swallows backspace keys on any non-input element.
-  //    * stops backspace -> back
-  //    */
   var rx = /INPUT|SELECT|TEXTAREA/i;
-
   $(document).bind("keydown keypress", function(e){
       if( e.which == 8 ){ // 8 == backspace
           if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
@@ -32,12 +27,10 @@ $(document).ready(function(){
     }else{
       return false;
     }
-    // console
   };
 
   var showStats = function(){
     updateWastedStrokes();
-    // updateTopMissedKeys();
     updateCPM();
   };
 
@@ -56,8 +49,6 @@ $(document).ready(function(){
 
   function updateCPM(){
     var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
-    // console.log(characters_typed);
-    //time
     var time_spent = (new Date()).getTime() - start_time;
     $('#cpm').html(characters_typed/(time_spent/60000));
   }
