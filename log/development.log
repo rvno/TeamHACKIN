@@ -8192,3 +8192,33 @@ Started GET "/assets/python.png" for ::1 at 2015-11-07 20:01:02 -0800
 
 
 Started GET "/assets/cplus.png" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 20:07:42 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 20:07:42 -0800
