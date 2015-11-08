@@ -4,14 +4,73 @@
   </section>
 <section id="typingContent">
   <pre>
-    <%= @filetype %>
-    <%= @filename %>
+    <%= 'Language: ' + @filetype %>
+    <%= 'File name: ' + @filename %>
     <% if @content %>
+    <div id="code-sample">
       <% @content.each do |line| %>
-        <%= line %>
+        <p class="left-txt code"><%= line %></p>
       <% end %>
+    </div>
+
+    <div id="stat-box">
+    	<p>WPM: <span id="wpm-value"></span></p>
+    	<p>Wasted Strokes: <span id="stroke-value"></span></p>
+    	<p>Top Missed Keys: <span id="missed-keys-value"></span></p>
+    </div>
     <% else %>
-      Unable to load github file.  Please try again with a valid url for a single file in a github repo.
+      <p class="center-txt">Unable to load github file.  Please try again with a valid url for a single file in a github repo.</p>
     <% end %>
   </pre>
+
+  <p>Want to try a different exercise? Paste in another URL below:</p>
+  <%= form_for new_file_path, :html => {:id => "repo-form"} do |f| %>
+    <%= f.text_field "url",
+        placeholder: "Paste in a GitHub URL to get started",
+        pattern: ".*github.com.*",
+        oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
+        onchange: "try{setCustomValidity('')}catch(e){}" %>
+    <br>
+    <%= f.submit "START"%>
+  <% end %>
+
+  <h1>Web Developer Skills</h1>
+  <p>Pick from one of the following categories to practice your coding skills!</p>
+  <div id="categories">
+  	<div class="row">
+  		<div class="category">
+  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Html</h2>
+  			Crank out a web page in minutes.
+  		</div>
+
+  		<div class="category">
+  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Css</h2>
+  			Don't lie, you don't actually know CSS.
+  		</div>
+
+  		<div class="category">
+  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Js</h2>
+  			JavaScript can get pretty ugly, we know.
+  		</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="category">
+  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Ruby</h2>
+  			Ruby's syntactic sugar. It's the bomb.
+  		</div>
+
+  		<div class="category">
+  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Sql</h2>
+  			Practice your SQL queries, as if you'll ever use them.
+  		</div>
+
+  		<div class="category">
+  			<img class="category-icon" src="/assets/html-icon.png">
+  			<h2 class="category-name">C++</h2>
+  			If you're up for some real programming...
+  		</div>
+  	</div>
+  </div>
+
 </section>

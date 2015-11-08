@@ -10,9 +10,10 @@
 
 <%= form_for new_file_path, :html => {:id => "repo-form"} do |f| %>
   <%= f.text_field "url",
-      placeholder: "github url",
+      placeholder: "Paste in a GitHub URL to get started",
       pattern: ".*github.com.*",
       oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
+      required: true,
       onchange: "try{setCustomValidity('')}catch(e){}" %>
   <br>
   <br>
@@ -57,6 +58,7 @@
 			</div>
 
 			<div class="category">
+
 				<img class="category-icon" src="assets/cplus.png">
 				<h2 class="category-name">C++</h2>
 				Because who doesn't want to be a C++ Ninja?
