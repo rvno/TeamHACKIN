@@ -8222,3 +8222,1435 @@ Started GET "/assets/cplus.png" for ::1 at 2015-11-07 20:07:42 -0800
 
 
 Started GET "/assets/application.js" for ::1 at 2015-11-07 20:07:42 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 08:50:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 333ms (Views: 324.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 08:50:50 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 08:57:25 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 157ms (Views: 156.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 08:57:25 -0800
+
+
+Started POST "/" for ::1 at 2015-11-08 08:57:26 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/yeV0kzRbTbInj0eg5bWaVL4+JDh8zt/HOTJqb1rqHaLAhqmu0IgzGiPfDfvt62sG+HPIixBD4Smpc669O6JDg==", "/"=>{"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 08:57:26 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (2.7ms)
+  Rendered welcome/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 606ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 08:57:27 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:11:26 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.2ms)
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 663ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:11:27 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:12:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.3ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 624ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:12:09 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:12:09 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:12:09 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:12:10 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:12:10 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:12:10 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:12:10 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:12:10 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:12:10 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:12:39 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (3.0ms)
+  Rendered welcome/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 299ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:12:39 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:12:43 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:12:54 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.3ms)
+  Rendered welcome/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 290ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:12:55 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:13:04 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.2ms)
+  Rendered welcome/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 258ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:13:05 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:13:54 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 258ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:13:54 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:14:16 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.2ms)
+  Rendered welcome/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 485ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:14:17 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:17:26 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.2ms)
+  Rendered welcome/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 684ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:17:27 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:17:36 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:17:50 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.4ms)
+  Rendered welcome/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 269ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:17:51 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:19:31 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.2ms)
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 210ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:19:31 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:23:22 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.3ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 313ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:23:23 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:23:53 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 299ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:23:54 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:27:56 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.6ms)
+  Rendered welcome/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8253ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:28:04 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb" for ::1 at 2015-11-08 09:29:19 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/craigslister/blob/master/lib/craigslister.rb"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 4782ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:29:24 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 09:29:25 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:29:25 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 09:29:26 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:29:26 -0800
+
+
+Started POST "/" for ::1 at 2015-11-08 09:29:27 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LnXuwfbaspPDQvZL6Az4VonQ3ydi6E+dO1YS9EioTf5aUGG1AUn/aWNTt2KELYOTwMnola9ae2aBFxXnAS1shg==", "/"=>{"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-08 09:29:27 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 3001ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:29:30 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-08 09:32:53 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (1.7ms)
+  Rendered welcome/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 3226ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:32:56 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 09:33:56 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:33:56 -0800
+
+
+Started POST "/" for ::1 at 2015-11-08 09:34:07 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DCU+or8wL2B0jQxh0uuL5m4b9GJ/uRXjHXCZkLI72h94ALHWSKNimtScTUi+yvAjJwLD0LILIRinMZ6D+777Zw==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:34:07 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.1ms)
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9627ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:34:17 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 09:34:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:34:35 -0800
+
+
+Started POST "/" for ::1 at 2015-11-08 09:34:39 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qBwH1reX+Lguo4bEfgQ4XZt4qbfHdZwmmgMA2ZB2c9bcOYiiQAS1Qo6yx+0SJUOY0mGeBQrHqN0gQgfK2fNSrg==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:34:39 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.6ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8012ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:34:47 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 09:35:09 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:35:09 -0800
+
+
+Started GET "/" for ::1 at 2015-11-08 09:35:10 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:35:10 -0800
+
+
+Started POST "/" for ::1 at 2015-11-08 09:35:15 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wP1QZQm7X4973tTrpjSP/Ts93sB5WCrSGsCSodpPVxu02N8R/igSddvPlcLKFfQ4ciTpcrTqHimggZWyk8p2Yw==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:35:15 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.4ms)
+  Rendered welcome/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 2398ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:35:18 -0800
+
+
+Started POST "/" for ::1 at 2015-11-08 09:37:02 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ukh57YjX+DbFk+ApuNHAX8pFKWCMCAJC7/sEoIGv2kvObfaZf0S1zGWCoQDU8Luag1we0kG6NrlVugOzyCr7Mw==", "/"=>{"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:37:02 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (7.9ms)
+  Rendered welcome/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 2394ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:37:04 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:37:45 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 3049ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:37:48 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:38:05 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (2.0ms)
+  Rendered welcome/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1333ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:38:06 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:38:26 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.4ms)
+  Rendered welcome/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1266ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:38:28 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:39:37 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.1ms)
+  Rendered welcome/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 3102ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:39:40 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:40:21 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.7ms)
+  Rendered welcome/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 3900ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:40:25 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:41:06 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8616ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:41:15 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:42:33 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.6ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6386ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:42:40 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:43:29 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 4022ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:43:33 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:43:42 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.7ms)
+  Rendered welcome/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1822ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:43:44 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:44:25 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 4725ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:44:29 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:44:29 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:44:30 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/TeamHACKIN/blob/master/README.md" for ::1 at 2015-11-08 09:45:29 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/TeamHACKIN/blob/master/README.md"}
+  Rendered shared/_options.html.erb (1.7ms)
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 4858ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/logofinal.png" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-08 09:45:34 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-08 09:45:34 -0800

@@ -8,7 +8,7 @@ $(document).ready(function(){
   var finished = false;
 
   $(document).keyup(function(e) {
-    if (e.keyCode === 27) doneButtonCallback();
+    if (e.keyCode === 27) typingFinished();
   });
 
   var rx = /INPUT|SELECT|TEXTAREA/i;
@@ -24,25 +24,29 @@ $(document).ready(function(){
   $('.textarea').bind('keyup, mouseup', function(e) {
     if(e.which == 9) { e.preventDefault(); }
   });
+
+
+
+  // Dom Logic
   var toggleText = function(){
     $('#typingContent').hide(transitionTime);
     $('#options').show(transitionTime);
     $('#stats').show(transitionTime);
     $('html').off();
   }
-  var doneButtonCallback = function(e){
+  var typingFinished = function(e){
     toggleText();
     showChart(incorrectStrokes);
     $('#doneButton').hide();
   }
 
-  $('#doneButton').on("click", doneButtonCallback);
+  $('#doneButton').on("click", typingFinished);
   var isFinished = function(){
     if(finished){
       return true;
     }else if(characterIndex>=correctCharacters.length){
       finished = true
-      //showChart(incorrectStrokes);
+      typingFinished();
       toggleText();
       return true;
     }else{
@@ -67,30 +71,6 @@ $(document).ready(function(){
     }
   }
 
-
-  function updateWPM(){
-    var time_spent = (new Date()).getTime() - start_time;
-    $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
-  }
-
-  var updateWastedStrokes = function(){
-    var totalStrokes = 0;
-
-    for (var keyCode in incorrectStrokes) {
-      totalStrokes += incorrectStrokes[keyCode];
-    }
-
-    $('#stats span#strokes').text(totalStrokes);
-  }
-
-  var trackIncorrectStroke = function(keyCode){
-    incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
-  };
-
-  var highlightCurrent = function(){
-    highlightYellow(characterIndex);
-  };
-
   var preparePage = function(){
     var highlightable = [];
     $('#options').hide();
@@ -104,6 +84,10 @@ $(document).ready(function(){
     highlightCurrent();
   }
 
+  var highlightCurrent = function(){
+    highlightYellow(characterIndex);
+  };
+
   var highlightGreen = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('green');
   };
@@ -116,55 +100,75 @@ $(document).ready(function(){
     $('span[data-character-index='+ index +']').removeClass().addClass('red');
   }
 
-  var checkKeyPress = function(keyCode){
 
-    var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
-    var currentChar = correctCharacters[characterIndex];
 
-    if (newWordChars[currentChar] === keyCode && !mistake) {
-      correctWords++;
-    }
 
-    if(isFinished()){
+  // Stat Logic
+  var updateWPM = function(){
+    var time_spent = (new Date()).getTime() - start_time;
+    $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
+  }
+
+  var updateWastedStrokes = function(){
+    var totalStrokes = 0;
+    for (var keyCode in incorrectStrokes)
+      totalStrokes += incorrectStrokes[keyCode];
+
+    $('#stats span#strokes').text(totalStrokes);
+  }
+
+  var trackIncorrectStroke = function(keyCode){
+    incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
+  };
+
+
+  var validateKeyCorrectness = function(keyCode, currentChar) {
+    var charIsCorrect = (currentChar === String.fromCharCode(keyCode));
+    var newline = (correctCharacters[characterIndex] === "\n" && keyCode === 13);
+
+    if (isFinished())
       return;
-    }else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
+
+    if ((charIsCorrect || newline) && !mistake) {
       highlightGreen(characterIndex);
-      characterIndex += 1;
-      highlightCurrent();
-    }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
-      highlightGreen(characterIndex);
-      characterIndex += 1;
-      goToNextNonWhitespace();
-      isFinished();
-      highlightCurrent();
-    }else if(keyCode === 8){
-      if(mistake){//a mistake was made
-        highlightCurrent();
-        mistake = false;
-      }else{
-        //a mistake hasnt been made
-        //we may want it to be able to go back? not really...
+      characterIndex++;
+      if (newline) {
+        goToNextNonWhitespace();
+        isFinished();
       }
+      highlightCurrent();
+    } else if (keyCode === 8 && mistake) {
+      highlightCurrent();
+      mistake = false;
     } else {
       trackIncorrectStroke(keyCode);
       highlightRed(characterIndex);
       mistake = true;
     }
+  }
+
+  var updateWordCount = function(keyCode, currentChar) {
+    var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41, ";": 59};
+    if (newWordChars[currentChar] === keyCode && !mistake)
+      correctWords++;
+  }
+
+  var checkKeyPress = function(keyCode){
+    var currentChar = correctCharacters[characterIndex];
+    updateWordCount(keyCode, currentChar);
+    validateKeyCorrectness(keyCode, currentChar);
     showStats();
   }
 
   $("html").keypress(function(keyEvent){
     keyEvent.preventDefault();
-    if(keyEvent.which !== 8){
+    if(keyEvent.which !== 8)
       checkKeyPress(keyEvent.keyCode);
-    }
   })
 
   $("html").keyup(function(keyEvent){
-
-    if(keyEvent.which === 8){
-        checkKeyPress(keyEvent.keyCode);
-    }
+    if(keyEvent.which === 8)
+      checkKeyPress(keyEvent.keyCode);
   });
 
   preparePage();
