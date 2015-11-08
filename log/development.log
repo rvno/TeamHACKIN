@@ -5985,3 +5985,353 @@ Started GET "/assets/application.css" for ::1 at 2015-11-07 16:20:38 -0800
 
 
 Started GET "/assets/application.js" for ::1 at 2015-11-07 16:20:38 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 17:51:15 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 643ms (Views: 631.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 17:51:16 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 17:51:19 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xrb7E1i9pwIQmWv13vBubdfF+2Y2zI3khmTGudGK7k8ymNBd3mkclp5AMRm7oY5rIoS0EiBSJsA4ELt1Lihwqw==", "/"=>{"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 17:51:19 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 533ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 17:51:19 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:51:19 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 17:51:19 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 17:55:15 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 366ms (Views: 222.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:55:16 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 17:55:16 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 17:55:16 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:55:26 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 17:55:50 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 865ms (Views: 311.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 17:55:51 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:55:51 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 17:55:51 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:56:01 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 17:58:52 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 1051ms (Views: 320.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:58:53 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 17:58:53 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 17:58:53 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 17:59:18 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 131ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 17:59:18 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 17:59:18 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 17:59:18 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:00:08 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 307ms (Views: 177.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:00:09 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:00:09 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:00:09 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:00:55 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 606ms (Views: 429.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:00:56 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:00:56 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:00:56 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:06:03 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 1140ms (Views: 419.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:06:05 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:06:05 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:06:05 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:07:57 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 827ms (Views: 240.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:07:57 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:07:57 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:07:57 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 18:08:08 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:08:08 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:08:08 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:08:09 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 18:08:09 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 18:08:09 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 18:08:09 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 18:08:09 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 18:08:09 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:08:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 82ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:08:10 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:08:10 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:08:10 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:11:26 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 754ms (Views: 290.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:11:27 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:11:27 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:11:27 -0800
+
+
+Started GET "/type/?url=https://github.com/hdngo/Twitchery/blob/master/twitchery.css" for ::1 at 2015-11-07 18:14:38 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/hdngo/Twitchery/blob/master/twitchery.css"}
+  Rendered welcome/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 366ms (Views: 169.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:14:38 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:14:38 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:14:38 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 18:15:07 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 18:15:07 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 18:15:45 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cP9RANSAtqgpHlL8Os/2hZuCvpETR29LVzwfEXU10ZWE0XpOUlQNPKfHCBBfnhaDbsPx5QXZxG/pSGLdipdPcQ==", "/"=>{"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:15:45 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 844ms (Views: 254.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:15:46 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:15:46 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:15:46 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:15:47 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 115ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:15:47 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:15:47 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:15:47 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:16:42 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 633ms (Views: 516.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:16:43 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:16:43 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:16:43 -0800
