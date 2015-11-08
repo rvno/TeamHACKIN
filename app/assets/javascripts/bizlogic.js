@@ -4,6 +4,7 @@ $(document).ready(function(){
   var incorrectStrokes = {};
   var start_time = new Date();
   var mistake = false;
+  var finished = false;
   // /*
   //    * this swallows backspace keys on any non-input element.
   //    * stops backspace -> back
@@ -17,14 +18,21 @@ $(document).ready(function(){
           }
       }
   });
+
   $('.textarea').bind('keyup, mouseup', function(e) {
     if(e.which == 9) { e.preventDefault(); }
   });
-  showStats = function(){
+
+  //var finished = function(){
+    //if()
+  //};
+
+  var showStats = function(){
     updateWastedStrokes();
     updateTopMissedKeys();
     updateCPM();
   };
+
   var goToNextNonWhitespace = function(){
     while(characterIndex<correctCharacters.length){
       console.log(characterIndex);
@@ -37,6 +45,7 @@ $(document).ready(function(){
       }
     }
   }
+
   function updateCPM(){
     var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
     // console.log(characters_typed);
@@ -45,7 +54,7 @@ $(document).ready(function(){
     $('#cpm').html(characters_typed/(time_spent/60000));
   }
 
-  updateWastedStrokes = function(){
+  var updateWastedStrokes = function(){
     var totalStrokes = 0;
 
     for (var keyCode in incorrectStrokes) {
@@ -56,19 +65,15 @@ $(document).ready(function(){
     $('#stats span#strokes').text(totalStrokes);
   }
 
-  updateTopMissedKeys = function(){
-
-  };
-
-  trackIncorrectStroke = function(keyCode){
+  var trackIncorrectStroke = function(keyCode){
     incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
   };
 
-  highlightCurrent = function(){
+  var highlightCurrent = function(){
     highlightYellow(characterIndex);
   };
 
-  preparePage = function(){
+  var preparePage = function(){
     var highlightable = [];
     correctCharacters.forEach(function(value, index, a){
       if(value==="\n"){value=" "+value};
@@ -80,19 +85,19 @@ $(document).ready(function(){
     highlightCurrent();
   }
 
-  highlightGreen = function(index){
+  var highlightGreen = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('green');
   };
 
-  highlightYellow = function(index){
+  var highlightYellow = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('yellow');
   }
 
-  highlightRed = function(index){
+  var highlightRed = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('red');
   }
 
-  checkKeyPress = function(keyCode){
+  var checkKeyPress = function(keyCode){
     console.log(keyCode)
     if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
       highlightGreen(characterIndex);
@@ -108,7 +113,8 @@ $(document).ready(function(){
         console.log('backspace entered');
         highlightCurrent();
         mistake = false;
-      }else{//a mistake hasnt been made
+      }else{
+        //a mistake hasnt been made
         //we may want it to be able to go back? not really...
       }
     } else {
@@ -127,6 +133,7 @@ $(document).ready(function(){
       checkKeyPress(keyEvent.keyCode);
     }
   })
+
   $("html").keyup(function(keyEvent){
 
     if(keyEvent.which === 8){
