@@ -1,4 +1,4 @@
-<section id="options">
+<section>
   <!-- options displayed -->
     <p>Paste in another URL below:</p>
     <%= form_for new_file_path, :url => url_for(:controller => 'welcome', :action => 'create'), :html => {:id => "repo-form"} do |f| %>
@@ -6,8 +6,10 @@
           placeholder: "Paste in a GitHub URL to get started",
           pattern: ".*github.com.*",
           oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
+          required: true,
           onchange: "try{setCustomValidity('')}catch(e){}" %>
-      <br>
+      <br />
+      <br />
       <%= f.submit "START"%>
   <% end %>
 
