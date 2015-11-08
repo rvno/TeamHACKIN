@@ -1,10 +1,5 @@
-<section id="stats">
-    <h2>CPM:<span id="cpm"></span></h2>
-    <h2>Wasted Strokes:<span id="strokes"></span></h2>
-</section>
-
-<h2>You are practicing: <%= 'Language: ' + @filetype %></h2>
-<h2>Current File: <%= @filename + '.' + @filetype %>
+<h2 class="purple-txt center-txt">You are practicing: <span class="orange-txt"><%= @filetype %></span></h2>
+<h2 class="purple-txt center-txt">Current File: <span class="orange-txt"><%= @filename + '.' + @filetype %></span></h2>
 
 <section id="typingContent">
   <pre>
@@ -15,67 +10,19 @@
       <% end %>
     </div>
 
-    <div id="stat-box">
-    	<p>WPM: <span id="wpm-value"></span></p>
-    	<p>Wasted Strokes: <span id="stroke-value"></span></p>
-    	<p>Top Missed Keys: <span id="missed-keys-value"></span></p>
-    </div>
     <% else %>
       <p class="center-txt">Unable to load github file.  Please try again with a valid url for a single file in a github repo.</p>
     <% end %>
   </pre>
-
-  <!-- options displayed -->
-  <div id="options">
-    <p>Want to try a different exercise? Paste in another URL below:</p>
-    <%= form_for new_file_path, :url => url_for(:controller => 'welcome', :action => 'create'), :html => {:id => "repo-form"} do |f| %>
-      <%= f.text_field "url",
-          placeholder: "Paste in a GitHub URL to get started",
-          pattern: ".*github.com.*",
-          oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
-          onchange: "try{setCustomValidity('')}catch(e){}" %>
-      <br>
-      <%= f.submit "START"%>
-  </div>
-  <% end %>
-
-  <h1>Web Developer Skills</h1>
-  <p>Pick from one of the following categories to practice your coding skills!</p>
-  <div id="categories">
-  	<div class="row">
-  		<div class="category">
-  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Html</h2>
-  			Crank out a web page in minutes.
-  		</div>
-
-  		<div class="category">
-  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Css</h2>
-  			Don't lie, you don't actually know CSS.
-  		</div>
-
-  		<div class="category">
-  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Js</h2>
-  			JavaScript can get pretty ugly, we know.
-  		</div>
-  	</div>
-
-  	<div class="row">
-  		<div class="category">
-  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Ruby</h2>
-  			Ruby's syntactic sugar. It's the bomb.
-  		</div>
-
-  		<div class="category">
-  			<img class="category-icon" src="/assets/html-icon.png"><h2 class="category-name">Sql</h2>
-  			Practice your SQL queries, as if you'll ever use them.
-  		</div>
-
-  		<div class="category">
-  			<img class="category-icon" src="/assets/html-icon.png">
-  			<h2 class="category-name">C++</h2>
-  			If you're up for some real programming...
-  		</div>
-  	</div>
-  </div>
-
 </section>
+
+<section id="stats">
+  <div>
+    <h1>Your Stats:</h1>
+    <h2>CPM:<span id="cpm"></span></h2>
+    <h2>Wasted Strokes:<span id="strokes"></span></h2>
+  </div>
+</section>
+
+<%= render "shared/options" %>
+
