@@ -3,9 +3,10 @@
 
 <%= form_for new_file_path, :html => {:id => "repo-form"} do |f| %>
   <%= f.text_field "url",
-      placeholder: "github url",
+      placeholder: "Paste in a GitHub URL to get started",
       pattern: ".*github.com.*",
       oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
+      required: true,
       onchange: "try{setCustomValidity('')}catch(e){}" %>
   <br>
   <br>
@@ -45,8 +46,8 @@
 
 			<div class="category">
 				<img class="category-icon" src="assets/html-icon.png">
-				<h2 class="category-name">Git</h2>
-				Because who doesn't want to be a Git Guru?
+				<h2 class="category-name">C++</h2>
+				If you're up for some real programming...
 			</div>
 		</div>
 	</div>
