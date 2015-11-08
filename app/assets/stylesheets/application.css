@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body{
+	width: 100%;
+	font-family: helvetica, arial;
+	background-color: #F5F5F5;
+	margin: 0;
+}
+
+.center-txt{
+	text-align: center;
+	margin: 0;
+}
+
+.left-txt{
+	text-align: left;
+}
+
+.code{
+	margin: 2px 0;
+}
+
+h1{
+	color: #5b2971;
+	text-align: center;
+}
+
+p{
+	text-align: center;
+	color: #5b2971;
+}
+
+#repo-form{
+	text-align: center;
+}
+
+#repo-form > input[type="text"]{
+	width: 720px;
+	height: 38px;
+	text-indent: 20px;
+	font-size: 20px;
+}
+
+#repo-form > input[type="submit"], #doneButton {
+	border: none;
+	background-color: #5b2971;
+	color: white;
+	text-transform: uppercase;
+	padding: 12px 60px;
+	line-height: 24px;
+	font-size: 20px;
+	letter-spacing: .5px;
+}
+
+#repo-form > input[type="submit"]:hover, #doneButton:hover {
+	background-color: #78448e;
+	cursor: pointer;
+}
+
+
+#categories{
+	width: 80%;
+	margin: 20px auto; 
+}
+
+.row{
+	margin: 0 auto;
+	width: 80%;
+	display: flex; 
+  	justify-content: center;  
+	
+}
+
+.category{
+	height: 300px;
+	width: 270px;
+	/*border: 1px solid #5b2971;*/
+	margin: 10px 10px;
+	/*display: inline-block;*/
+	text-align: center;
+	/*text-transform: uppercase;*/
+	color: #5b2971;
+	font-size: 18px;
+	padding: 40px 5px 10px 5px;
+	background-color: #fff;
+}
+
+.category { transition: all .4s ease-in-out; }
+.category:hover { transform: scale(1.1); }
+
+.category:hover{
+	color: white;
+	background-color: #5b2971;
+	cursor: pointer;
+}
+
+.category-name{
+	margin: 15px 0 100px 0;
+}
+
+.category-icon{
+	height:100px;
+	width:100px;
+}
+
+#code-sample{
+	width: 40%;
+	word-wrap: break-word;
+	margin-left: 0%;
+	border: 1px solid red;
+	padding: 15px;
+	margin-right: 5%;
+	display: inline-block;
+}
+
+#stat-box{
+	width: 30%;
+	height: 200px;
+	border: 1px solid blue;
+	margin-right: 10%;
+	display: inline-block;
+	margin-left: 0;
+	top: 43px;
+	right: 10%;
+}
+
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+
+.purple-txt{
+	color: #5b2971;
+}
+
+.orange-txt{
+	color: #F26651;
+}
+
+#typingContent{
+	border: 2px solid #5b2971;
+	padding: 10px;
+	width: 70%;
+	margin: 0 auto;
+	word-wrap: break-word;
+	background-color: white;
+	margin-bottom: 60px;
+}
+
+#stats{
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid #5b2971;
+}
+
+#button-div{
+	width:100%;
+	text-align: center;
+}

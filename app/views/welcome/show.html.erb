@@ -1,0 +1,34 @@
+<h2 class="purple-txt center-txt">You are practicing: <span class="orange-txt"><%= @filetype %></span></h2>
+<h2 class="purple-txt center-txt">Current File: <span class="orange-txt"><%= @filename + '.' + @filetype %></span></h2>
+
+<% if @content %>
+<section id="typingContent">
+  <pre>
+    <div id="code-sample">
+      <% @content.each do |line| %>
+        <p class="left-txt code"><%= line %></p>
+      <% end %>
+    </div>
+    
+  </pre>
+</section>
+<% else %>
+  <p class="center-txt">Unable to load github file.  Please try again with a valid url for a single file in a github repo.</p>
+<% end %>
+
+<% if @content %>
+<div id="button-div">
+  <button id="doneButton">DONE</button>
+<div>
+<% end %>
+
+<section id="stats">
+  <div>
+    <h1>Your Stats:</h1>
+    <h2>CPM:<span id="cpm"></span></h2>
+    <h2>Wasted Strokes:<span id="strokes"></span></h2>
+  </div>
+</section>
+
+<%= render "shared/options" %>
+
