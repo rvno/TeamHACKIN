@@ -11,14 +11,16 @@ class WelcomeController < ApplicationController
     url = format_url(params['url'])
     @filetype = url.split(/[\/,\.]/).last
     @filename = url.split(/[\/,\.]/)[-2]
-    @content = HTTParty.get(url).body.split("\n")
-  rescue
-    @content = nil
+    response = HTTParty.get(url)
+    if response.success?
+      @content = response.body.split("\n")
+    end
   end
 
   private
     def format_url url
       url.gsub!(/github.com/, 'raw.githubusercontent.com')
       url.gsub!(/blob\//, '')
+      url
     end
 end
