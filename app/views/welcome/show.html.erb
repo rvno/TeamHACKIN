@@ -1,0 +1,43 @@
+<h2 class="purple-txt center-txt">You are practicing: <span class="orange-txt"><%= @filetype %></span></h2>
+<h2 class="purple-txt center-txt">Current File: <span class="orange-txt"><%= @filename + '.' + @filetype %></span></h2>
+
+<br />
+<br />
+<% if @content %>
+<section id="typingContent">
+  <pre>
+    <% @content.each do |line| %>
+      <p class="left-txt code"><%= line %></p>
+    <% end %>
+  </pre>
+</section>
+<% else %>
+  <p class="center-txt">Unable to load github file.  Please try again with a valid url for a single file in a github repo.</p>
+
+  <%= render "shared/options" %>
+<% end %>
+
+<% if @content %>
+<div id="button-div">
+  <button id="doneButton">Done for now...</button>
+<div>
+<% end %>
+
+<%= form_for new_file_path, :url => url_for(:controller => 'welcome', :action => 'create'), :html => {:id => "hiddenForm"} do |f| %>
+  <input type="text" name="/[url]" id="inputField" hidden>
+<% end %>
+
+<section id="stats">
+  <div>
+    <h1>Your Stats:</h1>
+    <h2>WPM:<span id="wpm"></span></h2>
+    <h2>Wasted Strokes:<span id="strokes"></span></h2>
+  </div>
+
+  <h2 class="center-txt">Keystroke Error Frequency</h2>
+  <canvas id="myChart" width="400" height="400"></canvas>
+</section>
+
+<div id="options">
+  <%= render "shared/options" %>
+</div>
