@@ -1,11 +1,13 @@
 <section id="stats">
     <h2>CPM:<span id="cpm"></span></h2>
     <h2>Wasted Strokes:<span id="strokes"></span></h2>
-  </section>
+</section>
+
+<h2>You are practicing: <%= 'Language: ' + @filetype %></h2>
+<h2>Current File: <%= @filename + '.' + @filetype %>
+
 <section id="typingContent">
   <pre>
-    <%= 'Language: ' + @filetype %>
-    <%= 'File name: ' + @filename %>
     <% if @content %>
     <div id="code-sample">
       <% @content.each do |line| %>
@@ -23,15 +25,18 @@
     <% end %>
   </pre>
 
-  <p>Want to try a different exercise? Paste in another URL below:</p>
-  <%= form_for new_file_path, :html => {:id => "repo-form"} do |f| %>
-    <%= f.text_field "url",
-        placeholder: "Paste in a GitHub URL to get started",
-        pattern: ".*github.com.*",
-        oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
-        onchange: "try{setCustomValidity('')}catch(e){}" %>
-    <br>
-    <%= f.submit "START"%>
+  <!-- options displayed -->
+  <div id="options">
+    <p>Want to try a different exercise? Paste in another URL below:</p>
+    <%= form_for new_file_path, :url => url_for(:controller => 'welcome', :action => 'create'), :html => {:id => "repo-form"} do |f| %>
+      <%= f.text_field "url",
+          placeholder: "Paste in a GitHub URL to get started",
+          pattern: ".*github.com.*",
+          oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
+          onchange: "try{setCustomValidity('')}catch(e){}" %>
+      <br>
+      <%= f.submit "START"%>
+  </div>
   <% end %>
 
   <h1>Web Developer Skills</h1>
