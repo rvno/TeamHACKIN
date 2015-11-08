@@ -116,6 +116,31 @@ $(document).ready(function(){
     $('span[data-character-index='+ index +']').removeClass().addClass('red');
   }
 
+  var validateKeyCorrectness = function(keyCode, currentChar) {
+    var charIsCorrect = (currentChar === String.fromCharCode(keyCode));
+    var newline = (correctCharacters[characterIndex] === "\n" && keyCode === 13);
+
+    if (isFinished())
+      return;
+
+    if ((charIsCorrect || newline) && !mistake) {
+      highlightGreen(characterIndex);
+      characterIndex++;
+      if (newline) {
+        goToNextNonWhitespace();
+        isFinished();
+      }
+      highlightCurrent();
+    } else if (keyCode === 8 && mistake) {
+      highlightCurrent();
+      mistake = false;
+    } else {
+      trackIncorrectStroke(keyCode);
+      highlightRed(characterIndex);
+      mistake = true;
+    }
+  }
+
   var checkKeyPress = function(keyCode){
 
     var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
@@ -125,33 +150,10 @@ $(document).ready(function(){
       correctWords++;
     }
 
-    if(isFinished()){
-      return;
-    }else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
-      highlightGreen(characterIndex);
-      characterIndex += 1;
-      highlightCurrent();
-    }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
-      highlightGreen(characterIndex);
-      characterIndex += 1;
-      goToNextNonWhitespace();
-      isFinished();
-      highlightCurrent();
-    }else if(keyCode === 8){
-      if(mistake){//a mistake was made
-        highlightCurrent();
-        mistake = false;
-      }else{
-        //a mistake hasnt been made
-        //we may want it to be able to go back? not really...
-      }
-    } else {
-      trackIncorrectStroke(keyCode);
-      highlightRed(characterIndex);
-      mistake = true;
-    }
+    validateKeyCorrectness(keyCode, currentChar);
     showStats();
   }
+
 
   $("html").keypress(function(keyEvent){
     keyEvent.preventDefault();
