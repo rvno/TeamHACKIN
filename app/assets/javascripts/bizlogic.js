@@ -23,13 +23,21 @@ $(document).ready(function(){
     if(e.which == 9) { e.preventDefault(); }
   });
 
-  //var finished = function(){
-    //if()
-  //};
+  var isFinished = function(){
+    if(finished){
+      return true;
+    }else if(characterIndex>=correctCharacters.length){
+      finished = true
+      return true;
+    }else{
+      return false;
+    }
+    // console
+  };
 
   var showStats = function(){
     updateWastedStrokes();
-    updateTopMissedKeys();
+    // updateTopMissedKeys();
     updateCPM();
   };
 
@@ -99,7 +107,9 @@ $(document).ready(function(){
 
   var checkKeyPress = function(keyCode){
     console.log(keyCode)
-    if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
+    if(isFinished()){
+      return;
+    }else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
       highlightGreen(characterIndex);
       characterIndex += 1;
       highlightCurrent();
