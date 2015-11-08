@@ -19,8 +19,6 @@
                 highlightFill: "rgba(91,41,113,0.75)",
                 highlightStroke: "rgba(91,41,113,1)",
                 data: data
-                scaleFontSize: 16,
-                scaleFontColor: "#666",
             }
         ]
     };
@@ -36,10 +34,10 @@
     barStrokeWidth : 2,
     barValueSpacing : 5,
     barDatasetSpacing : 1,
+    scaleFontSize: 16,
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   }
-
-    if (labels[4] > 0){
+    if (labels.length > 0){
       var missedLettersChart = new Chart(ctx).Bar(data, options);
     }
   }
