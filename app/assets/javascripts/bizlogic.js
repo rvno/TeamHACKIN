@@ -7,11 +7,6 @@ $(document).ready(function(){
   var mistake = false;
   var finished = false;
 
-  // /*
-  //    * this swallows backspace keys on any non-input element.
-  //    * stops backspace -> back
-  //    */
-
   var rx = /INPUT|SELECT|TEXTAREA/i;
   var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
@@ -68,6 +63,7 @@ $(document).ready(function(){
     }
   }
 
+
   function updateWPM(){
     var time_spent = (new Date()).getTime() - start_time;
     $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
@@ -117,6 +113,7 @@ $(document).ready(function(){
   }
 
   var checkKeyPress = function(keyCode){
+
     var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
     var currentChar = correctCharacters[characterIndex];
 
