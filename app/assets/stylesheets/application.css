@@ -117,16 +117,6 @@ p{
 	width:100px;
 }
 
-#code-sample{
-	width: 40%;
-	word-wrap: break-word;
-	margin-left: 0%;
-	border: 1px solid red;
-	padding: 15px;
-	margin-right: 5%;
-	display: inline-block;
-}
-
 #stat-box{
 	width: 30%;
 	height: 200px;
@@ -177,4 +167,7 @@ p{
 #button-div{
 	width:100%;
 	text-align: center;
+}
+.hidden{
+	display:none;
 }
