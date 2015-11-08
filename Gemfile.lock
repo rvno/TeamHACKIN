@@ -146,6 +146,3 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   turbolinks
   web-console (~> 2.0)
-
-BUNDLED WITH
-   1.10.3
