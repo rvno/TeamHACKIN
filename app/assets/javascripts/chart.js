@@ -19,6 +19,8 @@
                 highlightFill: "rgba(91,41,113,0.75)",
                 highlightStroke: "rgba(91,41,113,1)",
                 data: data
+                scaleFontSize: 16,
+                scaleFontColor: "#666",
             }
         ]
     };
@@ -37,5 +39,7 @@
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   }
 
-    var missedLettersChart = new Chart(ctx).Bar(data, options);
+    if (labels[4] > 0){
+      var missedLettersChart = new Chart(ctx).Bar(data, options);
+    }
   }
