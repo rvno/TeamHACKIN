@@ -43,4 +43,5 @@ HACK1N-Slash is a typing demo that tracks a user's typing speed and accuracy.  I
 ##Run HACK1N-Slash Locally:
 
   1. Clone the repo - 'git clone https://github.com/hdngo/TeamHACKIN.git'
-  2. Throw up a server by running 'python -m SimpleHTTPServer'
+  2. Throw up a server by running `be rails s`
+  3. Go to `localhost:3000` in your browser
