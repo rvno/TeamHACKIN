@@ -6345,3 +6345,147 @@ Started GET "/assets/application.js" for ::1 at 2015-11-07 18:02:07 -0800
 
 
 Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:02:07 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:02:47 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 546ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:02:47 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:02:47 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:02:47 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:04:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 523ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:04:09 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:04:09 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:04:09 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:05:03 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 127ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:05:03 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:05:03 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:05:03 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:05:05 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 66ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:05:05 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:05:05 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:05:06 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:05:13 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 216ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:05:14 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:05:14 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:05:14 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:05:21 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 115ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:05:22 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:05:22 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:05:22 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:07:02 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 174ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:07:02 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:07:02 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:07:02 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:07:23 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 285ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:07:24 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:07:24 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:07:24 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:07:49 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered welcome/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 240ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:07:49 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:07:49 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:07:49 -0800

@@ -32,12 +32,12 @@ $(document).ready(function(){
   var showStats = function(){
     updateWastedStrokes();
     // updateTopMissedKeys();
-    updateCPM();
+    // updateCPM();
+    updateWPM();
   };
 
   var goToNextNonWhitespace = function(){
     while(characterIndex<correctCharacters.length){
-      console.log(characterIndex);
       if(correctCharacters[characterIndex]===" "|| correctCharacters[characterIndex]==="\n"|| correctCharacters[characterIndex]==="\t"){
         highlightGreen(characterIndex);
         characterIndex++;
@@ -48,16 +48,17 @@ $(document).ready(function(){
     }
   }
 
-  function updateCPM(){
-    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
-    // console.log(characters_typed);
-    //time
-    var time_spent = (new Date()).getTime() - start_time;
-    $('#cpm').html(characters_typed/(time_spent/60000));
-  }
+  // function updateCPM(){
+  //   var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
+  //   // console.log(characters_typed);
+  //   //time
+  //   var time_spent = (new Date()).getTime() - start_time;
+  //   $('#cpm').html(characters_typed/(time_spent/60000));
+  // }
 
   function updateWPM(){
-
+    var time_spent = (new Date()).getTime() - start_time;
+    $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
   }
 
   var updateWastedStrokes = function(){
@@ -122,7 +123,6 @@ $(document).ready(function(){
     //   highlightCurrent();
     }else if(keyCode === 8){
       if(mistake){//a mistake was made
-        console.log('backspace entered');
         highlightCurrent();
         mistake = false;
       }else{
@@ -140,7 +140,6 @@ $(document).ready(function(){
   $("html").keypress(function(keyEvent){
     keyEvent.preventDefault();
     // debugger
-    console.log(keyEvent.keyCode)
     if(keyEvent.which !== 8){
       checkKeyPress(keyEvent.keyCode);
     }
