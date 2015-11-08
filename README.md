@@ -11,6 +11,6 @@ HACK1N-Slash is a typing demo that tracks a user's typing speed and accuracy.  I
 
 ## Take a Look Inside the App
 
-![](demo.gif)
-![](splash.png)
-![](chart.png)
+![](public/demo.gif)
+![](public/splash.png)
+![](public/chart.png)
