@@ -1,10 +1,12 @@
 $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
+  var correctWords = 0;
   var characterIndex = 0;
   var incorrectStrokes = {};
   var start_time = new Date();
   var mistake = false;
   var finished = false;
+
   var rx = /INPUT|SELECT|TEXTAREA/i;
   var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
@@ -38,7 +40,7 @@ $(document).ready(function(){
 
   var showStats = function(){
     updateWastedStrokes();
-    updateCPM();
+    updateWPM();
   };
 
   var goToNextNonWhitespace = function(){
@@ -53,10 +55,10 @@ $(document).ready(function(){
     }
   }
 
-  function updateCPM(){
-    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
+
+  function updateWPM(){
     var time_spent = (new Date()).getTime() - start_time;
-    $('#cpm').html(characters_typed/(time_spent/60000));
+    $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
   }
 
   var updateWastedStrokes = function(){
@@ -101,6 +103,14 @@ $(document).ready(function(){
   }
 
   var checkKeyPress = function(keyCode){
+
+    var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
+    var currentChar = correctCharacters[characterIndex];
+
+    if (newWordChars[currentChar] === keyCode && !mistake) {
+      correctWords++;
+    }
+
     if(isFinished()){
       return;
     }else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
