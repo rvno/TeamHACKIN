@@ -3,6 +3,7 @@ $(document).ready(function(){
   var characterIndex = 0;
   var incorrectStrokes = {};
   var start_time = new Date();
+  var mistake = false;
   // /*
   //    * this swallows backspace keys on any non-input element.
   //    * stops backspace -> back
@@ -16,12 +17,26 @@ $(document).ready(function(){
           }
       }
   });
+  $('.textarea').bind('keyup, mouseup', function(e) {
+    if(e.which == 9) { e.preventDefault(); }
+  });
   showStats = function(){
     updateWastedStrokes();
     updateTopMissedKeys();
     updateCPM();
   };
-
+  var goToNextNonWhitespace = function(){
+    while(characterIndex<correctCharacters.length){
+      console.log(characterIndex);
+      if(correctCharacters[characterIndex]===" "|| correctCharacters[characterIndex]==="\n"|| correctCharacters[characterIndex]==="\t"){
+        highlightGreen(characterIndex);
+        characterIndex++;
+      }
+      else{
+        break;
+      }
+    }
+  }
   function updateCPM(){
     var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
     // console.log(characters_typed);
@@ -56,10 +71,12 @@ $(document).ready(function(){
   preparePage = function(){
     var highlightable = [];
     correctCharacters.forEach(function(value, index, a){
+      if(value==="\n"){value=" "+value};
       highlightable.push("<span data-character-index='"+ index +"'>"+ value +"</span>");
     });
 
     $('#typingContent pre').html(highlightable.join(""));
+    goToNextNonWhitespace();
     highlightCurrent();
   }
 
@@ -77,26 +94,33 @@ $(document).ready(function(){
 
   checkKeyPress = function(keyCode){
     console.log(keyCode)
-    if(correctCharacters[characterIndex] === String.fromCharCode(keyCode)){
+    if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
       highlightGreen(characterIndex);
       characterIndex += 1;
       highlightCurrent();
-    }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13){
-      console.log('return entered');
+    }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
+      highlightGreen(characterIndex);
       characterIndex += 1;
+      goToNextNonWhitespace();
       highlightCurrent();
     }else if(keyCode === 8){
-      console.log('backspace entered');
-      highlightCurrent();
+      if(mistake){//a mistake was made
+        console.log('backspace entered');
+        highlightCurrent();
+        mistake = false;
+      }else{//a mistake hasnt been made
+        //we may want it to be able to go back? not really...
+      }
     } else {
       trackIncorrectStroke(keyCode);
       highlightRed(characterIndex);
+      mistake = true;
     }
     showStats();
   }
 
   $("html").keypress(function(keyEvent){
-    // keyEvent.preventDefault();
+    keyEvent.preventDefault();
     // debugger
     console.log(keyEvent.keyCode)
     if(keyEvent.which !== 8){
