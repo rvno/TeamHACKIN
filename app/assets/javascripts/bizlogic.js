@@ -70,7 +70,7 @@ $(document).ready(function(){
 
   function updateWPM(){
     var time_spent = (new Date()).getTime() - start_time;
-    $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
+    $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
   }
 
   var updateWastedStrokes = function(){
