@@ -48,17 +48,10 @@ $(document).ready(function(){
     }
   }
 
-  // function updateCPM(){
-  //   var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
-  //   // console.log(characters_typed);
-  //   //time
-  //   var time_spent = (new Date()).getTime() - start_time;
-  //   $('#cpm').html(characters_typed/(time_spent/60000));
-  // }
-
   function updateWPM(){
     var time_spent = (new Date()).getTime() - start_time;
     $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
+    console.log(Math.ceil(correctWords/(time_spent/60000)));
   }
 
   var updateWastedStrokes = function(){
@@ -105,22 +98,21 @@ $(document).ready(function(){
   }
 
   var checkKeyPress = function(keyCode){
-    if ((correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake) || keyCode === 32 && correctCharacters[characterIndex] === " " && !mistake){
-      correctWords ++;
+    var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
+    var currentChar = correctCharacters[characterIndex];
+
+    if (newWordChars[currentChar] === keyCode && !mistake) {
+      correctWords++;
+    }
+    if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
+      highlightGreen(characterIndex);
+      characterIndex += 1;
+      highlightCurrent();
+    }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
       highlightGreen(characterIndex);
       characterIndex += 1;
       goToNextNonWhitespace();
       highlightCurrent();
-      console.log(correctWords);
-    } else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
-      highlightGreen(characterIndex);
-      characterIndex += 1;
-      highlightCurrent();
-    // }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
-    //   highlightGreen(characterIndex);
-    //   characterIndex += 1;
-    //   goToNextNonWhitespace();
-    //   highlightCurrent();
     }else if(keyCode === 8){
       if(mistake){//a mistake was made
         highlightCurrent();
