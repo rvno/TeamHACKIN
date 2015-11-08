@@ -7,19 +7,14 @@ $(document).ready(function(){
   var mistake = false;
   var finished = false;
 
-  // /*
-  //    * this swallows backspace keys on any non-input element.
-  //    * stops backspace -> back
-  //    */
-
   var rx = /INPUT|SELECT|TEXTAREA/i;
   var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
-      if( e.which == 8 ){ // 8 == backspace
-          if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
-              e.preventDefault();
-          }
+    if( e.which == 8 ){ // 8 == backspace
+      if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
+          e.preventDefault();
       }
+    }
   });
 
   $('.textarea').bind('keyup, mouseup', function(e) {
@@ -30,6 +25,14 @@ $(document).ready(function(){
     $('#options').show(transitionTime);
     $('#stats').show(transitionTime);
   }
+  var doneButtonCallback = function(e){
+    toggleText();
+    showChart(incorrectStrokes);
+  }
+  $('#doneButton').on(
+      "click",
+      doneButtonCallback
+    );
   var isFinished = function(){
     if(finished){
       return true;
@@ -60,9 +63,10 @@ $(document).ready(function(){
     }
   }
 
+
   function updateWPM(){
     var time_spent = (new Date()).getTime() - start_time;
-    $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
+    $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
   }
 
   var updateWastedStrokes = function(){
@@ -85,6 +89,8 @@ $(document).ready(function(){
 
   var preparePage = function(){
     var highlightable = [];
+    $('#options').hide();
+    $('#stats').hide();
     correctCharacters.forEach(function(value, index, a){
       if(value==="\n"){value=" "+value};
       highlightable.push("<span data-character-index='"+ index +"'>"+ value +"</span>");
@@ -107,6 +113,7 @@ $(document).ready(function(){
   }
 
   var checkKeyPress = function(keyCode){
+
     var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
     var currentChar = correctCharacters[characterIndex];
 
