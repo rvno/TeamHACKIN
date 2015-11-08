@@ -129,8 +129,10 @@ p{
 }
 
 .green {
-  /*background-color: green;*/
-  color:green;
+  background-color: #5B2971;
+  color:#F26651;
+
+  font-weight: bold;
 }
 .yellow {
   background-color: yellow;
@@ -162,6 +164,7 @@ p{
 	margin: 0 auto;
 	padding: 10px;
 	border: 2px solid #5b2971;
+	margin-top: 20px;
 }
 
 #button-div{
