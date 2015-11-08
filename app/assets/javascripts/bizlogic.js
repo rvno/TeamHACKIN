@@ -3,7 +3,19 @@ $(document).ready(function(){
   var characterIndex = 0;
   var incorrectStrokes = {};
   var start_time = new Date();
+  // /*
+  //    * this swallows backspace keys on any non-input element.
+  //    * stops backspace -> back
+  //    */
+  var rx = /INPUT|SELECT|TEXTAREA/i;
 
+  $(document).bind("keydown keypress", function(e){
+      if( e.which == 8 ){ // 8 == backspace
+          if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
+              e.preventDefault();
+          }
+      }
+  });
   showStats = function(){
     updateWastedStrokes();
     updateTopMissedKeys();
@@ -12,7 +24,7 @@ $(document).ready(function(){
 
   function updateCPM(){
     var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
-    console.log(characters_typed);
+    // console.log(characters_typed);
     //time
     var time_spent = (new Date()).getTime() - start_time;
     $('#cpm').html(characters_typed/(time_spent/60000));
@@ -23,7 +35,7 @@ $(document).ready(function(){
 
     for (var keyCode in incorrectStrokes) {
       totalStrokes += incorrectStrokes[keyCode];
-      console.log(totalStrokes);
+      // console.log(totalStrokes);
     }
 
     $('#stats span#strokes').text(totalStrokes);
@@ -64,6 +76,7 @@ $(document).ready(function(){
   }
 
   checkKeyPress = function(keyCode){
+    console.log(keyCode)
     if(correctCharacters[characterIndex] === String.fromCharCode(keyCode)){
       highlightGreen(characterIndex);
       characterIndex += 1;
@@ -71,6 +84,9 @@ $(document).ready(function(){
     }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13){
       console.log('return entered');
       characterIndex += 1;
+      highlightCurrent();
+    }else if(keyCode === 8){
+      console.log('backspace entered');
       highlightCurrent();
     } else {
       trackIncorrectStroke(keyCode);
@@ -80,8 +96,19 @@ $(document).ready(function(){
   }
 
   $("html").keypress(function(keyEvent){
-    checkKeyPress(keyEvent.keyCode);
+    // keyEvent.preventDefault();
+    // debugger
+    console.log(keyEvent.keyCode)
+    if(keyEvent.which !== 8){
+      checkKeyPress(keyEvent.keyCode);
+    }
   })
+  $("html").keyup(function(keyEvent){
+
+    if(keyEvent.which === 8){
+        checkKeyPress(keyEvent.keyCode);
+    }
+  });
 
   preparePage();
 });
