@@ -8084,3 +8084,111 @@ Started GET "/assets/ruby.png" for ::1 at 2015-11-07 19:10:59 -0800
 
 Started GET "/assets/cplus.png" for ::1 at 2015-11-07 19:10:59 -0800
 >>>>>>> hackathon
+
+
+Started GET "/" for ::1 at 2015-11-07 20:00:01 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 305ms (Views: 295.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 20:00:01 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 20:00:03 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jgjIoit6LXWmmrpkbziDX8WXbJK7PqZTLQskS7lz7Jn6LUfW3OlgjwaL+00DGfiajI5bIHaMkqiXSiNY8PbN4Q==", "/"=>{"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 20:00:03 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (2.4ms)
+  Rendered welcome/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 510ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 20:00:03 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 20:00:03 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 20:00:04 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 20:00:04 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 20:00:04 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 20:00:04 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 20:00:04 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 20:00:04 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 20:01:01 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MnhwshNy6EAY8UjXCrEbzxX00TI5pV+hIo4j645eLq9GXf/G5OGlurjgCf5mkGAKXO3mgPQXa1qYzyT4x9sP1w==", "/"=>{"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}}
+Redirected to http://localhost:3000/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 20:01:01 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (2.4ms)
+  Rendered welcome/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 375ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 20:01:02 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 20:01:02 -0800
