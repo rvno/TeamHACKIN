@@ -174,3 +174,20 @@ p{
 .hidden{
 	display:none;
 }
+
+#doneButton{
+	margin-bottom: 40px;
+}
+
+#navbar{
+	height: 100px;
+	width: 100%;
+}
+
+#logo{
+	height: 50px;
+	width: 170px;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-top: 15px;
+}
