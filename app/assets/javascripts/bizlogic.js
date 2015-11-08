@@ -141,7 +141,7 @@ $(document).ready(function(){
       highlightCurrent();
       mistake = false;
     } else {
-      trackIncorrectStroke(keyCode);
+      trackIncorrectStroke(currentChar.charCodeAt(0));
       highlightRed(characterIndex);
       mistake = true;
     }
