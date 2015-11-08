@@ -6489,3 +6489,131 @@ Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:07:49 -0800
 
 
 Started GET "/assets/application.css" for ::1 at 2015-11-07 18:07:49 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:32:52 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (9.0ms)
+  Rendered welcome/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 507ms (Views: 303.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 18:32:53 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:33:47 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (2.2ms)
+  Rendered welcome/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 254ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 18:33:47 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:34:00 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (1.5ms)
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 57ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 18:34:00 -0800
+
+
+Started GET "/type/?url=https://github.com/Yago580/ebony-jackson/blob/master/index.html" for ::1 at 2015-11-07 18:34:50 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>"https://github.com/Yago580/ebony-jackson/blob/master/index.html"}
+  Rendered shared/_options.html.erb (1.4ms)
+  Rendered welcome/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 554ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/css.png" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/javascript.png" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/python.png" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/cplus.png" for ::1 at 2015-11-07 18:34:51 -0800
+
+
+Started GET "/assets/ruby.png" for ::1 at 2015-11-07 18:34:51 -0800

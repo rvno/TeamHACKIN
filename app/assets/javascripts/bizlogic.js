@@ -6,14 +6,12 @@ $(document).ready(function(){
   var start_time = new Date();
   var mistake = false;
   var finished = false;
-<<<<<<< HEAD
 
   // /*
   //    * this swallows backspace keys on any non-input element.
   //    * stops backspace -> back
   //    */
-=======
->>>>>>> hackathon
+
   var rx = /INPUT|SELECT|TEXTAREA/i;
   var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
@@ -47,13 +45,7 @@ $(document).ready(function(){
 
   var showStats = function(){
     updateWastedStrokes();
-<<<<<<< HEAD
-    // updateTopMissedKeys();
-    // updateCPM();
     updateWPM();
-=======
-    updateCPM();
->>>>>>> hackathon
   };
 
   var goToNextNonWhitespace = function(){
@@ -68,15 +60,9 @@ $(document).ready(function(){
     }
   }
 
-<<<<<<< HEAD
   function updateWPM(){
-=======
-  function updateCPM(){
-    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
->>>>>>> hackathon
     var time_spent = (new Date()).getTime() - start_time;
     $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
-    console.log(Math.ceil(correctWords/(time_spent/60000)));
   }
 
   var updateWastedStrokes = function(){
