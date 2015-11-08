@@ -4,11 +4,9 @@
 <% if @content %>
 <section id="typingContent">
   <pre>
-    <div id="code-sample">
-      <% @content.each do |line| %>
-        <p class="left-txt code"><%= line %></p>
-      <% end %>
-    </div>
+    <% @content.each do |line| %>
+      <p class="left-txt code"><%= line %></p>
+    <% end %>
   </pre>
 </section>
 <% else %>
