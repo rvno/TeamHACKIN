@@ -3,8 +3,12 @@
 
 Check it out on [Heroku](http://hack1n-slash.herokuapp.com/)!
 
+##The Team
+  * Team Lead: Harvey Ngo
+  * Team Members: Adam Fluke, Chris Scott, Kevin Yan, Isaac (Jose) Taveras, Noah Wiener
+  * Idea Credit: Chris Scott
 
-## Concept
+##The Concept
 HACK1N-Slash is a typing demo that tracks a user's typing speed and accuracy.  In order to practice typing in a user's language of choice, users can paste URLs from any project on github, and test their typing in that file format.  When they complete the file or are done typing, the app displays details on typing speed and accuracy, including a chart of their most frequently missed characters.
 
 ## Take a Look Inside the App
@@ -35,11 +39,6 @@ HACK1N-Slash is a typing demo that tracks a user's typing speed and accuracy.  I
   * Make calls to the GitHub API to provide an interface where users may navigate through repos to select files.
   * Implement OAuth to allow users to save their stats and challenge friends
   * Speed Ranks
-
-##The Team
-  * Team Lead: Harvey Ngo
-  * Team Members: Adam Fluke, Chris Scott, Kevin Yan, Isaac (Jose) Taveras, Noah Wiener
-  * Idea Credit: Chris Scott
 
 ##Run HACK1N-Slash Locally:
 
