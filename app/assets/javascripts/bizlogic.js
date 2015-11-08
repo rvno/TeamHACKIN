@@ -24,6 +24,7 @@ $(document).ready(function(){
     $('#typingContent').hide(transitionTime);
     $('#options').show(transitionTime);
     $('#stats').show(transitionTime);
+    $('html').off();
   }
   var doneButtonCallback = function(e){
     toggleText();
