@@ -7,6 +7,10 @@ $(document).ready(function(){
   var mistake = false;
   var finished = false;
 
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) doneButtonCallback();
+  });
+
   var rx = /INPUT|SELECT|TEXTAREA/i;
   var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
@@ -30,6 +34,7 @@ $(document).ready(function(){
     showChart(incorrectStrokes);
     $('#doneButton').hide();
   }
+
   $('#doneButton').on("click", doneButtonCallback);
   var isFinished = function(){
     if(finished){
