@@ -8,7 +8,7 @@ $(document).ready(function(){
   var finished = false;
 
   $(document).keyup(function(e) {
-    if (e.keyCode === 27) doneButtonCallback();
+    if (e.keyCode === 27) typingFinished();
   });
 
   var rx = /INPUT|SELECT|TEXTAREA/i;
@@ -24,25 +24,29 @@ $(document).ready(function(){
   $('.textarea').bind('keyup, mouseup', function(e) {
     if(e.which == 9) { e.preventDefault(); }
   });
+
+
+
+  // Dom Logic
   var toggleText = function(){
     $('#typingContent').hide(transitionTime);
     $('#options').show(transitionTime);
     $('#stats').show(transitionTime);
     $('html').off();
   }
-  var doneButtonCallback = function(e){
+  var typingFinished = function(e){
     toggleText();
     showChart(incorrectStrokes);
     $('#doneButton').hide();
   }
 
-  $('#doneButton').on("click", doneButtonCallback);
+  $('#doneButton').on("click", typingFinished);
   var isFinished = function(){
     if(finished){
       return true;
     }else if(characterIndex>=correctCharacters.length){
       finished = true
-      //showChart(incorrectStrokes);
+      typingFinished();
       toggleText();
       return true;
     }else{
@@ -67,30 +71,6 @@ $(document).ready(function(){
     }
   }
 
-
-  function updateWPM(){
-    var time_spent = (new Date()).getTime() - start_time;
-    $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
-  }
-
-  var updateWastedStrokes = function(){
-    var totalStrokes = 0;
-
-    for (var keyCode in incorrectStrokes) {
-      totalStrokes += incorrectStrokes[keyCode];
-    }
-
-    $('#stats span#strokes').text(totalStrokes);
-  }
-
-  var trackIncorrectStroke = function(keyCode){
-    incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
-  };
-
-  var highlightCurrent = function(){
-    highlightYellow(characterIndex);
-  };
-
   var preparePage = function(){
     var highlightable = [];
     $('#options').hide();
@@ -104,6 +84,10 @@ $(document).ready(function(){
     highlightCurrent();
   }
 
+  var highlightCurrent = function(){
+    highlightYellow(characterIndex);
+  };
+
   var highlightGreen = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('green');
   };
@@ -115,6 +99,28 @@ $(document).ready(function(){
   var highlightRed = function(index){
     $('span[data-character-index='+ index +']').removeClass().addClass('red');
   }
+
+
+
+
+  // Stat Logic
+  var updateWPM = function(){
+    var time_spent = (new Date()).getTime() - start_time;
+    $('#wpm').html(Math.ceil(correctWords/(time_spent/60000)));
+  }
+
+  var updateWastedStrokes = function(){
+    var totalStrokes = 0;
+    for (var keyCode in incorrectStrokes)
+      totalStrokes += incorrectStrokes[keyCode];
+
+    $('#stats span#strokes').text(totalStrokes);
+  }
+
+  var trackIncorrectStroke = function(keyCode){
+    incorrectStrokes[keyCode] = incorrectStrokes[keyCode] + 1 || 1;
+  };
+
 
   var validateKeyCorrectness = function(keyCode, currentChar) {
     var charIsCorrect = (currentChar === String.fromCharCode(keyCode));
@@ -141,32 +147,28 @@ $(document).ready(function(){
     }
   }
 
-  var checkKeyPress = function(keyCode){
-
-    var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41};
-    var currentChar = correctCharacters[characterIndex];
-
-    if (newWordChars[currentChar] === keyCode && !mistake) {
+  var updateWordCount = function(keyCode, currentChar) {
+    var newWordChars = {"\n": 13, " ": 32, "/": 47, "=": 61, ".": 46, ">": 62, ")": 41, ";": 59};
+    if (newWordChars[currentChar] === keyCode && !mistake)
       correctWords++;
-    }
+  }
 
+  var checkKeyPress = function(keyCode){
+    var currentChar = correctCharacters[characterIndex];
+    updateWordCount(keyCode, currentChar);
     validateKeyCorrectness(keyCode, currentChar);
     showStats();
   }
 
-
   $("html").keypress(function(keyEvent){
     keyEvent.preventDefault();
-    if(keyEvent.which !== 8){
+    if(keyEvent.which !== 8)
       checkKeyPress(keyEvent.keyCode);
-    }
   })
 
   $("html").keyup(function(keyEvent){
-
-    if(keyEvent.which === 8){
-        checkKeyPress(keyEvent.keyCode);
-    }
+    if(keyEvent.which === 8)
+      checkKeyPress(keyEvent.keyCode);
   });
 
   preparePage();
