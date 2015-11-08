@@ -8,11 +8,11 @@ $(document).ready(function(){
   var rx = /INPUT|SELECT|TEXTAREA/i;
   var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
-      if( e.which == 8 ){ // 8 == backspace
-          if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
-              e.preventDefault();
-          }
+    if( e.which == 8 ){ // 8 == backspace
+      if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
+          e.preventDefault();
       }
+    }
   });
 
   $('.textarea').bind('keyup, mouseup', function(e) {
@@ -23,6 +23,14 @@ $(document).ready(function(){
     $('#options').show(transitionTime);
     $('#stats').show(transitionTime);
   }
+  var doneButtonCallback = function(e){
+    toggleText();
+    showChart(incorrectStrokes);
+  }
+  $('#doneButton').on(
+      "click",
+      doneButtonCallback
+    );
   var isFinished = function(){
     if(finished){
       return true;
@@ -79,6 +87,8 @@ $(document).ready(function(){
 
   var preparePage = function(){
     var highlightable = [];
+    $('#options').hide();
+    $('#stats').hide();
     correctCharacters.forEach(function(value, index, a){
       if(value==="\n"){value=" "+value};
       highlightable.push("<span data-character-index='"+ index +"'>"+ value +"</span>");
