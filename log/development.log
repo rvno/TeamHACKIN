@@ -5312,3 +5312,676 @@ Started GET "/assets/application.js" for ::1 at 2015-11-07 15:35:17 -0800
 
 
 Started GET "/assets/application.css" for ::1 at 2015-11-07 15:35:17 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:39:31 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 2555ms (Views: 2540.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:39:35 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:39:35 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:39:35 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:39:37 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XCXrI7kq/UVpKCkBMGif9XpN7Ytg0T/y1cegQK3WcC1sp0KdAyw8QteFMACT7Mq/ijDlRdD07XTPpEvASLRYkQ==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:39:37 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:39:38 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:39:38 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:39:41 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:39:44 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q5wHEAh5CLSdrvdOqNLfNl13Zbcfdf075KsUeu9LIgCbHq6usn/JsyMD7k8LVop8rQptea9QL73+yP/6CikKvA==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:39:44 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:39:44 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:39:44 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:39:52 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:39:55 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EGZaOU0uSYU7HuBG/aTX/7oURoFhZesww2PIbcaTU+Ig5POH9yiIgoWz+UdeIIK1SmlOT9FAObbZACPtI/F7Xg==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:39:55 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:39:55 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:39:56 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:40:04 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 15:40:42 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:40:43 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:40:43 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 15:40:43 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 15:40:44 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5MD6rxA+v2VkQePlQKXTK4zICJ8GfwAnt/YI20xMd5LUQlMRqjh+Ytrs+uTjIYZhfLUAUbZa0qGtleNbqS5fLg==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:40:44 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:40:45 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:40:45 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:40:48 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:41:28 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yzUcbMnfuzZwga2Sqy40dCpQDswJ5rqy93tVfwSPNSv7t7XSc9l6Mc4stJMIqmE+2i0GArnDaDTtGL7/4e0dlw==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:41:28 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:41:28 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:41:28 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:41:30 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:41:47 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gguOYN8AACED8Xb2XBmAyVKTNmLh0916ZT4ivJgaGyyyiSfeZQbBJr1cb/f/ndWDou4+rFH2D/x/Xck8fXgzkA==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:41:47 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:41:47 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:41:47 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:49:48 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 168ms (Views: 167.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:49:48 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:49:48 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:51:47 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:51:47 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:51:47 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:52:00 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:52:00 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:52:00 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:53:36 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 218ms (Views: 216.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:53:37 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:53:37 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:53:46 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:53:47 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:53:47 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:54:21 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:54:22 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:54:22 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:55:53 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:55:53 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:55:53 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 15:55:55 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 15:56:32 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQaN2N/pTwSnFxmqbDCqDPaeT6DFmvYhMN28a/OP+bmphCRmZe+OAxm6AKvPtP9GBuNHbnW/JKcqvlfrFu3RBQ==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:56:32 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:56:33 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:56:33 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:57:31 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:57:31 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:57:31 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:57:57 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:57:58 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:57:58 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:58:37 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 161ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:58:37 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:58:37 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 15:59:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 15:59:10 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 15:59:10 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:00:42 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 165ms (Views: 163.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:00:43 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:00:43 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:00:59 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:00:59 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:00:59 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:05:52 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:05:52 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:05:52 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 16:05:56 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-11-07 16:06:11 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyarHLBtdmWmVwLFUzCjpJimBxn4AM1sYxbq0zQZpvqnpAKiCmu3Yhj6G8TwtPbuaNsP10glH+p5dQFT0XuORg==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:06:12 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 195ms (Views: 194.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:06:12 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:06:12 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:06:58 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:06:58 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:06:58 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:07:11 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:07:12 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:07:12 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:07:52 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:12:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:12:10 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:12:10 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:13:49 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 177ms (Views: 176.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:13:50 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:13:50 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:15:52 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:15:53 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:15:53 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:16:09 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 223ms (Views: 220.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:16:10 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:16:10 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:16:13 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:16:14 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:16:14 -0800
+
+
+Started GET "/" for ::1 at 2015-11-07 16:17:09 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:17:09 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:17:09 -0800
+
+
+Started GET "/assets/html-icon.png" for ::1 at 2015-11-07 16:17:09 -0800
+
+
+Started POST "/" for ::1 at 2015-11-07 16:17:12 -0800
+Processing by WelcomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hEQObo23mqRaWDa6fL6Gt79ziAWCdZIup8CrELW0YJ3lf4xkoK4sti9IkFSMWe3+zAiApKyZGW+dZS8RyQizlw==", "/"=>{"url"=>""}, "commit"=>"START"}
+Redirected to http://localhost:3000/type/?url=
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:17:12 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:17:12 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:17:12 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:17:23 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:17:23 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:17:23 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:17:41 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:17:41 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:17:41 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:18:01 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:18:01 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:18:01 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:18:23 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:18:23 -0800
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:18:23 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:18:36 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:18:36 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:18:36 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:18:40 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:18:40 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:18:40 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:19:34 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:19:34 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:19:34 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:19:59 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:19:59 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:19:59 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:20:11 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 113ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:20:12 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:20:12 -0800
+
+
+Started GET "/type/?url=" for ::1 at 2015-11-07 16:20:38 -0800
+Processing by WelcomeController#show as HTML
+  Parameters: {"url"=>""}
+  Rendered welcome/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 139.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for ::1 at 2015-11-07 16:20:38 -0800
+
+
+Started GET "/assets/application.js" for ::1 at 2015-11-07 16:20:38 -0800
