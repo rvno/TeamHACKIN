@@ -28,11 +28,9 @@ $(document).ready(function(){
   var doneButtonCallback = function(e){
     toggleText();
     showChart(incorrectStrokes);
+    $('#doneButton').hide();
   }
-  $('#doneButton').on(
-      "click",
-      doneButtonCallback
-    );
+  $('#doneButton').on("click", doneButtonCallback);
   var isFinished = function(){
     if(finished){
       return true;
