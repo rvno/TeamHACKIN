@@ -6,6 +6,7 @@ $(document).ready(function(){
   var mistake = false;
   var finished = false;
   var rx = /INPUT|SELECT|TEXTAREA/i;
+  var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
       if( e.which == 8 ){ // 8 == backspace
           if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
@@ -17,12 +18,18 @@ $(document).ready(function(){
   $('.textarea').bind('keyup, mouseup', function(e) {
     if(e.which == 9) { e.preventDefault(); }
   });
-
+  var toggleText = function(){
+    $('#typingContent').hide(transitionTime);
+    $('#options').show(transitionTime);
+    $('#stats').show(transitionTime);
+  }
   var isFinished = function(){
     if(finished){
       return true;
     }else if(characterIndex>=correctCharacters.length){
       finished = true
+      //showChart(incorrectStrokes);
+      toggleText();
       return true;
     }else{
       return false;
@@ -36,7 +43,6 @@ $(document).ready(function(){
 
   var goToNextNonWhitespace = function(){
     while(characterIndex<correctCharacters.length){
-      console.log(characterIndex);
       if(correctCharacters[characterIndex]===" "|| correctCharacters[characterIndex]==="\n"|| correctCharacters[characterIndex]==="\t"){
         highlightGreen(characterIndex);
         characterIndex++;
@@ -58,7 +64,6 @@ $(document).ready(function(){
 
     for (var keyCode in incorrectStrokes) {
       totalStrokes += incorrectStrokes[keyCode];
-      // console.log(totalStrokes);
     }
 
     $('#stats span#strokes').text(totalStrokes);
@@ -78,7 +83,6 @@ $(document).ready(function(){
       if(value==="\n"){value=" "+value};
       highlightable.push("<span data-character-index='"+ index +"'>"+ value +"</span>");
     });
-
     $('#typingContent pre').html(highlightable.join(""));
     goToNextNonWhitespace();
     highlightCurrent();
@@ -97,7 +101,6 @@ $(document).ready(function(){
   }
 
   var checkKeyPress = function(keyCode){
-    console.log(keyCode)
     if(isFinished()){
       return;
     }else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
@@ -108,10 +111,10 @@ $(document).ready(function(){
       highlightGreen(characterIndex);
       characterIndex += 1;
       goToNextNonWhitespace();
+      isFinished();
       highlightCurrent();
     }else if(keyCode === 8){
       if(mistake){//a mistake was made
-        console.log('backspace entered');
         highlightCurrent();
         mistake = false;
       }else{
@@ -128,8 +131,6 @@ $(document).ready(function(){
 
   $("html").keypress(function(keyEvent){
     keyEvent.preventDefault();
-    // debugger
-    console.log(keyEvent.keyCode)
     if(keyEvent.which !== 8){
       checkKeyPress(keyEvent.keyCode);
     }
