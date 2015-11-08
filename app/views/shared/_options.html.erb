@@ -6,6 +6,7 @@
           placeholder: "Paste in a GitHub URL to get started",
           pattern: ".*github.com.*",
           oninvalid: "setCustomValidity('Unable to load github file.  Please try again with a valid url for a single file in a github repo.')",
+          required: true,
           onchange: "try{setCustomValidity('')}catch(e){}" %>
       <br />
       <br />
