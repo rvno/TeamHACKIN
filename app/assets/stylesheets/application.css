@@ -129,8 +129,10 @@ p{
 }
 
 .green {
-  /*background-color: green;*/
-  color:green;
+  background-color: #5B2971;
+  color:#F26651;
+
+  font-weight: bold;
 }
 .yellow {
   background-color: yellow;
