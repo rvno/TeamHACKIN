@@ -74,15 +74,15 @@ p{
 
 #categories{
 	width: 80%;
-	margin: 20px auto; 
+	margin: 20px auto;
 }
 
 .row{
 	margin: 0 auto;
 	width: 80%;
-	display: flex; 
-  	justify-content: center;  
-	
+	display: flex;
+  	justify-content: center;
+
 }
 
 .category{
@@ -139,7 +139,8 @@ p{
 }
 
 .green {
-  background-color: green;
+  /*background-color: green;*/
+  color:green;
 }
 .yellow {
   background-color: yellow;

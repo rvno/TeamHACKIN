@@ -6,13 +6,16 @@ $(document).ready(function(){
   var start_time = new Date();
   var mistake = false;
   var finished = false;
+<<<<<<< HEAD
 
   // /*
   //    * this swallows backspace keys on any non-input element.
   //    * stops backspace -> back
   //    */
+=======
+>>>>>>> hackathon
   var rx = /INPUT|SELECT|TEXTAREA/i;
-
+  var transitionTime = 500;
   $(document).bind("keydown keypress", function(e){
       if( e.which == 8 ){ // 8 == backspace
           if(!rx.test(e.target.tagName) || e.target.disabled || e.target.readOnly ){
@@ -24,16 +27,33 @@ $(document).ready(function(){
   $('.textarea').bind('keyup, mouseup', function(e) {
     if(e.which == 9) { e.preventDefault(); }
   });
-
-  //var finished = function(){
-    //if()
-  //};
+  var toggleText = function(){
+    $('#typingContent').hide(transitionTime);
+    $('#options').show(transitionTime);
+    $('#stats').show(transitionTime);
+  }
+  var isFinished = function(){
+    if(finished){
+      return true;
+    }else if(characterIndex>=correctCharacters.length){
+      finished = true
+      //showChart(incorrectStrokes);
+      toggleText();
+      return true;
+    }else{
+      return false;
+    }
+  };
 
   var showStats = function(){
     updateWastedStrokes();
+<<<<<<< HEAD
     // updateTopMissedKeys();
     // updateCPM();
     updateWPM();
+=======
+    updateCPM();
+>>>>>>> hackathon
   };
 
   var goToNextNonWhitespace = function(){
@@ -48,7 +68,12 @@ $(document).ready(function(){
     }
   }
 
+<<<<<<< HEAD
   function updateWPM(){
+=======
+  function updateCPM(){
+    var characters_typed = correctCharacters.join("").substr(0,characterIndex).length;
+>>>>>>> hackathon
     var time_spent = (new Date()).getTime() - start_time;
     $('#cpm').html(Math.ceil(correctWords/(time_spent/60000)));
     console.log(Math.ceil(correctWords/(time_spent/60000)));
@@ -59,7 +84,6 @@ $(document).ready(function(){
 
     for (var keyCode in incorrectStrokes) {
       totalStrokes += incorrectStrokes[keyCode];
-      // console.log(totalStrokes);
     }
 
     $('#stats span#strokes').text(totalStrokes);
@@ -79,7 +103,6 @@ $(document).ready(function(){
       if(value==="\n"){value=" "+value};
       highlightable.push("<span data-character-index='"+ index +"'>"+ value +"</span>");
     });
-
     $('#typingContent pre').html(highlightable.join(""));
     goToNextNonWhitespace();
     highlightCurrent();
@@ -104,7 +127,10 @@ $(document).ready(function(){
     if (newWordChars[currentChar] === keyCode && !mistake) {
       correctWords++;
     }
-    if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
+
+    if(isFinished()){
+      return;
+    }else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
       highlightGreen(characterIndex);
       characterIndex += 1;
       highlightCurrent();
@@ -112,6 +138,7 @@ $(document).ready(function(){
       highlightGreen(characterIndex);
       characterIndex += 1;
       goToNextNonWhitespace();
+      isFinished();
       highlightCurrent();
     }else if(keyCode === 8){
       if(mistake){//a mistake was made
@@ -131,7 +158,6 @@ $(document).ready(function(){
 
   $("html").keypress(function(keyEvent){
     keyEvent.preventDefault();
-    // debugger
     if(keyEvent.which !== 8){
       checkKeyPress(keyEvent.keyCode);
     }
