@@ -1,10 +1,12 @@
 $(document).ready(function(){
   var correctCharacters = $('#typingContent pre').text().split("");
+  var correctWords = 0;
   var characterIndex = 0;
   var incorrectStrokes = {};
   var start_time = new Date();
   var mistake = false;
   var finished = false;
+
   // /*
   //    * this swallows backspace keys on any non-input element.
   //    * stops backspace -> back
@@ -29,7 +31,7 @@ $(document).ready(function(){
 
   var showStats = function(){
     updateWastedStrokes();
-    updateTopMissedKeys();
+    // updateTopMissedKeys();
     updateCPM();
   };
 
@@ -52,6 +54,10 @@ $(document).ready(function(){
     //time
     var time_spent = (new Date()).getTime() - start_time;
     $('#cpm').html(characters_typed/(time_spent/60000));
+  }
+
+  function updateWPM(){
+
   }
 
   var updateWastedStrokes = function(){
@@ -98,16 +104,22 @@ $(document).ready(function(){
   }
 
   var checkKeyPress = function(keyCode){
-    console.log(keyCode)
-    if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
-      highlightGreen(characterIndex);
-      characterIndex += 1;
-      highlightCurrent();
-    }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
+    if ((correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake) || keyCode === 32 && correctCharacters[characterIndex] === " " && !mistake){
+      correctWords ++;
       highlightGreen(characterIndex);
       characterIndex += 1;
       goToNextNonWhitespace();
       highlightCurrent();
+      console.log(correctWords);
+    } else if(correctCharacters[characterIndex] === String.fromCharCode(keyCode) && !mistake){
+      highlightGreen(characterIndex);
+      characterIndex += 1;
+      highlightCurrent();
+    // }else if(correctCharacters[characterIndex] === "\n" && keyCode === 13 && !mistake){
+    //   highlightGreen(characterIndex);
+    //   characterIndex += 1;
+    //   goToNextNonWhitespace();
+    //   highlightCurrent();
     }else if(keyCode === 8){
       if(mistake){//a mistake was made
         console.log('backspace entered');
