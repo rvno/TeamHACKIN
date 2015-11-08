@@ -7,10 +7,10 @@ DBC Hackathon Project
 
 ## Concept
 
-HACK1N-Slash is a typing demo that tracks a user's typing speed and accuracy.  In order to practice typing in a user's language of choice, users can paste URLs from any project on github, and test their typing in that file format.  When they complete the file or are done typing, the app displays details on typing speed and accuracy, including a chart of their most frequently missed characters. 
+HACK1N-Slash is a typing demo that tracks a user's typing speed and accuracy.  In order to practice typing in a user's language of choice, users can paste URLs from any project on github, and test their typing in that file format.  When they complete the file or are done typing, the app displays details on typing speed and accuracy, including a chart of their most frequently missed characters.
 
 ## Take a Look Inside the App
 
-<img src="demo.gif" width="500">
-<img src="splash.png" width="500">
-<img src="chart.png" width="500">
+![](demo.gif)
+![](splash.png)
+![](chart.png)
