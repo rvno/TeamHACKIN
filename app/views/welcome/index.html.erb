@@ -1,5 +1,6 @@
-<h1>Practice typing Code</h1>
-	<p>Are you a sloth when it comes to typing out code? We're here to help!</p>
+<h1>Practice typing Code!</h1>
+<!-- <p>Are you a sloth when it comes to typing out code? We're here to help!</p> -->
+<p>Choose from any github file, or enjoy some of our hand curated presets!</p>
 
 <%= form_for new_file_path, :html => {:id => "repo-form"} do |f| %>
   <%= f.text_field "url",
@@ -11,6 +12,8 @@
   <br>
   <br>
   <%= f.submit "START"%>
+  <br>
+  <br>
 <% end %>
 
 <!-- hidden field for submitting posts -->
@@ -18,8 +21,8 @@
 	<input type="text" name="/[url]" id="inputField" hidden>
 <% end %>
 
-	<h1>Web Developer Skills</h1>
-	<p>Pick from one of the following categories to practice your coding skills!</p>
+	<!-- <h1>Web Developer Skills</h1> -->
+	<!-- <p>Or pick from one of the following categories to practice your coding skills!</p> -->
 
 	<div id="categories">
 		<div class="row">
