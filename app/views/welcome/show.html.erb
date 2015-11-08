@@ -22,6 +22,10 @@
 <div>
 <% end %>
 
+<%= form_for new_file_path, :url => url_for(:controller => 'welcome', :action => 'create'), :html => {:id => "hiddenForm"} do |f| %>
+  <input type="text" name="/[url]" id="inputField" hidden>
+<% end %>
+
 <section id="stats">
   <div>
     <h1>Your Stats:</h1>

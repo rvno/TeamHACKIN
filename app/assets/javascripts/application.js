@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+function submitForm(url) {
+  $('#hiddenForm #inputField').val(url);
+  $('#hiddenForm').submit();
+}
